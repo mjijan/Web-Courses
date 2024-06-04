@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(26, 188, 156);
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+}
+
+.title {
+    background-color: rgb(22, 160, 133);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    /* font-weight: bold; */
+    padding: 20px;
+    border-radius: 4px 4px 0 0;
+}
+
+.img_div {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(26, 188, 156);
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.input_div {
+    display: inline-block;
+    width: 350px;
+    height: 50px;
+    /* border: 2px black solid; */
+    margin-left: -5px;
+    margin-top: 30px;
+    background-color: rgb(255, 255, 209);
+    vertical-align: top;
+}
+
+.inp1 {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid rgb(198, 198, 198);
+    border-radius: 0 10px 10px 0;
+}
+
+.forget {
+    font-size: 16px;
+    color: rgb(26, 188, 156);
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+button {
+    width: 399px;
+    height: 50px;
+    font-size: 18px;
+    background-color: rgb(26, 188, 156);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
