@@ -1,0 +1,80 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(to bottom right, rgb(157, 196, 251), rgb(210, 194, 255));
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    width: 710px;
+    height: 620px;
+    margin: auto;
+    background-color: white;
+    margin-top: 25px;
+}
+
+.left_section {
+    background-image: url('imgs/bg.jpg');
+    background-size: cover;
+    width: 350px;
+    height: 100%;
+    color: white;
+    padding-top: 440px;
+    display: inline-block;
+}
+
+.left_section .text1 {
+    font-size: 27px;
+    font-weight: bold;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.left_section .text2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.left_section .text3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 65px;
+    margin-left: 200px;
+    text-transform: capitalize;
+}
+
+.left_section .text3 .sp1 {
+    font-size: 28px;
+}
+
+.left_section .text3 .sp2 {
+    font-size: 14px;
+}
+
+.right_section {
+    padding: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.right_section .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+}
