@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+}
+
+header {
+    height: 40px;
+    width: 100%;
+    background-color: rgb(58, 58, 58);
+    padding: 10px;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 40px;
+    display: inline-block;
+    width: 200px;
+}
+
+.logo .Indi {
+    color: rgb(250, 70, 63);
+}
+
+.logo .soft {
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    display: inline-block;
+    vertical-align: top;
+}
+
+ul {
+    margin-top: 0px;
+}
+
+ul li {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-left: 40px;
+}
+
+.btn1 {
+    background-color: rgb(97, 99, 218);
+    width: 80px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    color: white;
+    margin-left: 30px;
+}

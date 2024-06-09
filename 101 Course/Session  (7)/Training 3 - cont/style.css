@@ -1,0 +1,135 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(to bottom right, rgb(157, 196, 251), rgb(210, 194, 255));
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    width: 710px;
+    height: 620px;
+    margin: auto;
+    background-color: white;
+    margin-top: 25px;
+}
+
+.left_section {
+    background-image: url('imgs/bg.jpg');
+    background-size: cover;
+    width: 350px;
+    height: 100%;
+    color: white;
+    padding-top: 440px;
+    display: inline-block;
+}
+
+.left_section .text1 {
+    font-size: 27px;
+    font-weight: bold;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.left_section .text2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.left_section .text3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 65px;
+    margin-left: 200px;
+    text-transform: capitalize;
+}
+
+.left_section .text3 .sp1 {
+    font-size: 28px;
+}
+
+.left_section .text3 .sp2 {
+    font-size: 14px;
+}
+
+.right_section {
+    padding: 30px;
+    display: inline-block;
+    vertical-align: top;
+    width: 350px;
+}
+
+.right_section .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+}
+
+.right_section .label1,
+.right_section .inp1 {
+    display: block;
+}
+
+.right_section .label1 {
+    margin: 25px 0 7px 0;
+    font-size: 14px;
+    color: rgb(77, 77, 77);
+}
+
+.right_section .inp1 {
+    width: 100%;
+    padding: 12px;
+    color: rgb(96, 96, 96);
+    border: 1px solid rgb(173, 173, 173);
+}
+
+.right_section .inp1::placeholder {
+    color: rgb(146, 146, 146);
+}
+
+.chk1 {
+    margin-left: 0px;
+    margin-top: 25px;
+}
+
+.label2 {
+    font-size: 14px;
+    color: rgb(77, 77, 77);
+    margin-left: 5px;
+}
+
+.play {
+    font-size: 14px;
+    color: rgb(58, 100, 202);
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 4px;
+    margin-left: 25.5px;
+}
+
+.btn1 {
+    width: 140px;
+    height: 42px;
+    background-color: rgb(58, 100, 202);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+}
