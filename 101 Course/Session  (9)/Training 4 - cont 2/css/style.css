@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1100px;
+}
+
+header {
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 30px;
+    display: flex;
+    width: 200px;
+}
+
+.logo .Indi {
+    color: rgb(238, 86, 83);
+}
+
+.logo .soft {
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    display: inline-block;
+    vertical-align: top;
+    width: 93%;
+}
+
+ul {
+    margin-top: 0px;
+}
+
+ul li {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-left: 25px;
+}
+
+.btn1 {
+    background-color: rgb(97, 99, 218);
+    width: 80px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    color: white;
+    margin-left: 40px;
+
+}
+
+.head {
+    background-image: url('../imgs/hero_bg.jpg');
+    background-size: cover;
+    width: 100%;
+}
+
+
+.hero {
+    width: 100%;
+    height: 450px;
+    color: white;
+    display: flex;
+}
+
+.left_hero {
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+    padding-top: 80px;
+}
+
+.left_hero .text1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 10px 30px;
+}
+
+.left_hero .text2 {
+    font-size: 30px;
+    margin: 5px 30px;
+}
+
+.left_hero .text3 {
+    font-size: 10px;
+    margin: 10px 30px;
+}
+
+.left_hero .btn2 {
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    background-color: rgb(238, 86, 83);
+    margin: 35px 30px;
+    border: none;
+    color: white;
+    font-size: 10px;
+    border-radius: 2px;
+}
+
+.right_hero {
+    padding-top: 20px;
+}
+
+.hero_img {
+    width: 130%;
+}
+
+.main {
+    width: 100%;
+    background-color: rgb(55, 55, 55);
+    padding: 50px;
+    color: #fff;
+}
+
+.main .section {
+    width: 300px;
+    height: 180px;
+    background-color: rgb(240, 84, 85);
+    display: inline-block;
+    margin: 5px;
+    vertical-align: top;
+    padding: 0 15px;
+    transition: all 0.3s;
+}
+
+.main .title {
+    text-align: center;
+    color: rgb(240, 84, 85);
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.main .text {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+
+.main .left_section {
+    margin-left: 30px;
+}
+
+.main .blue_section {
+    background-color: rgb(99, 98, 228) !important;
+}
+
+.main .section_icon {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.section .title {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.section .text {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 11px;
+    color: #fff;
+}
+
+.section:hover {
+    box-shadow: 0px 0px 10px 3px rgb(255, 255, 255);
+}
