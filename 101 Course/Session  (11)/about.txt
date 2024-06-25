@@ -1,3 +1,12 @@
 NewHorizons Institute
 Damascus - Syria
 Instructor: M.Jijan
+
+100 css text effect
+https://freefrontend.com/css-text-effects/#google_vignette
+
+https://www.w3schools.com/css/css_text_shadow.asp
+
+google fonts
+https://fonts.google.com/
+
