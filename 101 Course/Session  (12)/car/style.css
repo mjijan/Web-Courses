@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(220, 233, 255);
+}
+
+main {
+    background-color: rgb(85, 85, 85);
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    border-radius: 20px;
+    margin-top: 75px;
+}
+
+.a,
+.b,
+.c,
+.d,
+.e,
+.f,
+.g {
+    position: absolute;
+    background-color: white;
+    border: 3px solid #222;
+    border-radius: 5px;
+}
+
+.a {
+    width: 50px;
+    height: 80px;
+    top: 25px;
+    left: 100px;
+}
+
+.b {
+    width: 150px;
+    height: 80px;
+    top: 105px;
+    left: 100px;
+}
+
+.c {
+    width: 50px;
+    height: 40px;
+    top: 145px;
+    left: 255px;
+}
+
+.f,
+.g {
+    top: 190px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.f {
+    left: 125px;
+}
+
+.g {
+    left: 220px;
+}
+
+.d,
+.e {
+    left: 305px;
+    width: 15px;
+    height: 10px;
+    border-radius: 100%;
+    ;
+}
+
+.e {
+    top: 170px;
+}
+
+.d {
+    top: 150px
+}

@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(220, 233, 255);
+}
+
+.a {
+    width: 150px;
+    height: 100px;
+    margin: 20px;
+    display: inline-block;
+    background-color: brown;
+    border-radius: 10px;
+}
+
+.b {
+    width: 150px;
+    height: 100px;
+    display: inline-block;
+    background-color: rgb(3, 1, 146);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+main {
+    background-color: yellow;
+    margin-top: 150px;
+    margin-left: 50px;
+    width: 800px;
+    position: relative;
+}
