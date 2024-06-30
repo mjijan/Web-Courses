@@ -1,0 +1,159 @@
+:root {
+    --color1: rgb(251, 144, 38);
+    --color2: rgb(4, 196, 10);
+    --color3: rgb(56, 202, 231);
+    --color4: rgb(251, 88, 38);
+    --color5: rgba(20, 47, 156, 0.761);
+    --color6: rgb(65, 59, 104);
+}
+
+body {
+    background-color: rgb(228, 228, 228);
+    margin: 0;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 620px;
+    height: 600px;
+    margin: auto;
+    background-color: white;
+    position: relative;
+}
+
+.d1,
+.d2,
+.d3,
+.d4,
+.d5,
+.d6 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 10px solid #000;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.main {
+    position: absolute;
+    top: 150px;
+    left: 140px;
+}
+
+.d1 {
+    top: 265px;
+    left: 30px;
+    border-color: var(--color1);
+}
+
+.d2 {
+    top: 125px;
+    left: 75px;
+    border-color: var(--color2);
+}
+
+.d3 {
+    top: 40px;
+    left: 190px;
+    border-color: var(--color3);
+}
+
+.d4 {
+    top: 40px;
+    left: 330px;
+    border-color: var(--color4);
+}
+
+.d5 {
+    top: 125px;
+    left: 445px;
+    border-color: var(--color5);
+}
+
+.d6 {
+    top: 265px;
+    left: 490px;
+    border-color: var(--color6);
+}
+
+.footer {
+    position: relative;
+    top: 460px;
+    display: flex;
+}
+
+.card {
+    width: 90px;
+    margin: 10px 10px;
+    height: 105px;
+    display: inline-block;
+    line-height: 13px;
+}
+
+.card .title {
+    font-size: 14.5px;
+    text-align: center;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+
+.card .text {
+    font-size: 9px;
+    text-align: justify;
+    word-break: break-all
+}
+
+.c1 {
+    border-bottom: 4px solid var(--color1);
+}
+
+.c2 {
+    border-bottom: 4px solid var(--color2);
+}
+
+.c3 {
+    border-bottom: 4px solid var(--color3);
+}
+
+.c4 {
+    border-bottom: 4px solid var(--color4);
+}
+
+.c5 {
+    border-bottom: 4px solid var(--color5);
+}
+
+.c6 {
+    border-bottom: 4px solid var(--color6);
+}
+
+.title1 {
+    color: var(--color1);
+}
+
+.title2 {
+    color: var(--color2);
+}
+
+.title3 {
+    color: var(--color3);
+}
+
+.title4 {
+    color: var(--color4);
+}
+
+.title5 {
+    color: var(--color5);
+}
+
+.title6 {
+    color: var(--color6);
+}
