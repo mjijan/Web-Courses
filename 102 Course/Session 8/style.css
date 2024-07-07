@@ -1,0 +1,217 @@
+:root {
+    --color1 : rgb(255,112,0);
+    --color2 : rgb(250, 178, 90);
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    background-image: url('imgs/bg.jpg');
+    background-size: cover;
+}
+
+html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1500px;
+    margin: auto;
+}
+
+.header {
+    padding: 10px;
+    height: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 55px;
+}
+
+.nav {
+    display: inline-block;
+    width: 800px;
+    margin-left: 15px;
+    vertical-align: top;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 35px;
+    color: var(--color1);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: 60px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.inpo1 {
+    width: 220px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px 0 0 5px;
+    height: 42px;
+    font-size: 18px;
+    padding-left: 10px;
+    border-right: none;
+    vertical-align: top;
+    margin-left: 50px;
+}
+
+.btn1 {
+    width: 120px;
+    background-color: var(--color1);
+    color: white ;
+    border-radius: 0 5px 5px 0;
+    height: 42px;
+    margin-left: -7px;
+    border: 1px solid white;
+    border-left: none;
+    vertical-align: top;
+}
+
+.inpo1::placeholder {
+    color: white;
+}
+
+.main {
+    width: 100%;
+    margin-top: 150px;
+}
+
+.main .left {
+    color: white;
+    width: 49%;
+    display: inline-block;
+    height: 600px;
+    padding: 45px;
+}
+
+.main .right {
+    color: white;
+    width: 49%;
+    display: inline-block;
+
+    height: 600px;
+    vertical-align: top;
+    padding: 45px;
+}
+
+.main .left .text1 {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.main .left .text2 {
+    color: var(--color1);
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.main .left .text3 {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.main .left .text4 {
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+    line-height: 28px;
+}
+
+.main .left .btn2 {
+
+}
+
+.btn2 {
+    width: 150px;
+    background-color: var(--color1);
+    color: rgb(0, 0, 0) ;
+    border-radius: 10px;
+    height: 42px;
+    border-left: none;
+    vertical-align: top;
+    margin-left: 5px;
+    margin-top: 20px;
+    border: none;
+    font-size: 17.5px;
+    font-weight:normal;
+}
+
+.right .form {
+    width: 350px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    margin-left: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+.right .form .title {
+    text-align: center;
+    background-color: white;
+    color: var(--color2);
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.right .form .inpo2 {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    border-bottom: 1px solid white ;
+    font-size: 18px;
+    padding: 4px;
+    margin: 25px 0;
+}
+
+.right .form .inpo2::placeholder {
+    font-weight: bold;
+    color: white;
+}
+
+.btn3 {
+    width: 100%;
+    background-color: var(--color1);
+    color: rgb(0, 0, 0) ;
+    border-radius: 10px;
+    height: 42px;
+    border-left: none;
+    vertical-align: top;
+    margin-left: 5px;
+    margin-top: 20px;
+    border: none;
+    font-size: 17.5px;
+    font-weight:normal;
+}
+
+.img1 {
+    width: 35px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
