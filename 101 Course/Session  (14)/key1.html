@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --color1: red;
+            --color2: rgb(122, 122, 122);
+            --color3: rgb(12, 186, 0);
+            --color4: rgb(76, 0, 197);
+            --color5: rgb(255, 128, 0);
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .letter {
+            position: absolute;
+            font-size: 60px;
+            font-weight: bold;
+            top: 500px;
+            text-shadow: 0 0 10px rgb(207, 130, 15);
+            text-shadow: -4px 0 rgb(255, 255, 255), 0 4px rgb(255, 255, 255), 4px 0 rgb(255, 255, 255), 0 -4px rgb(255, 255, 255);
+
+        }
+
+        .container {
+            position: relative;
+            height: 600px;
+            width: 750px;
+            margin: auto;
+            background-image: linear-gradient(rgb(230, 200, 6), rgb(212, 239, 3));
+            border-radius: 50px;
+            border: 10px ridge goldenrod;
+        }
+
+        .letter1 {
+            left: 250px;
+            animation: key1 2s;
+            animation-delay: 0.5s;
+            color: var(--color1);
+        }
+
+        .letter2 {
+            left: 300px;
+            animation: key2 2s;
+            animation-delay: 0.5s;
+            color: var(--color2);
+        }
+
+        .letter3 {
+            left: 350px;
+            animation: key3 2s;
+            animation-delay: 0.5s;
+            color: var(--color3);
+        }
+
+        .letter4 {
+            left: 400px;
+            animation: key4 2s;
+            animation-delay: 0.5s;
+            color: var(--color4);
+        }
+
+        .letter5 {
+            left: 450px;
+            animation: key5 2s;
+            animation-delay: 0.5s;
+            color: var(--color5);
+        }
+
+        @keyframes key1 {
+            0% {
+                top: 500px;
+                font-size: 60px;
+            }
+
+            50% {
+                top: 50px;
+                left: 50px;
+                font-size: 80px;
+            }
+
+            100% {
+                top: 500px;
+                font-size: 60px;
+            }
+        }
+
+        @keyframes key2 {
+            0% {
+                top: 500px;
+                font-size: 60px;
+            }
+
+            50% {
+                top: 50px;
+                left: 190px;
+                font-size: 80px;
+            }
+
+            100% {
+                top: 500px;
+                font-size: 60px;
+            }
+        }
+
+        @keyframes key3 {
+            0% {
+                top: 500px;
+                font-size: 60px;
+            }
+
+            50% {
+                top: 50px;
+                left: 330px;
+                font-size: 80px;
+            }
+
+            100% {
+                top: 500px;
+                font-size: 60px;
+            }
+        }
+
+        @keyframes key4 {
+            0% {
+                top: 500px;
+                font-size: 60px;
+            }
+
+            50% {
+                top: 50px;
+                left: 480px;
+                font-size: 80px;
+            }
+
+            100% {
+                top: 500px;
+                font-size: 60px;
+            }
+        }
+
+        @keyframes key5 {
+            0% {
+                top: 500px;
+                font-size: 60px;
+            }
+
+            50% {
+                top: 50px;
+                left: 650px;
+                font-size: 80px;
+            }
+
+            100% {
+                top: 500px;
+                font-size: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="letter letter1">A</div>
+        <div class="letter letter2">H</div>
+        <div class="letter letter3">M</div>
+        <div class="letter letter4">A</div>
+        <div class="letter letter5">D</div>
+    </div>
+</body>
+
+</html>
