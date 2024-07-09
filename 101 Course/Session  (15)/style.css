@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 700px;
+    height: 600px;
+    margin: auto;
+    position: relative;
+    border: 5px groove rgb(0, 0, 157);
+    overflow: hidden;
+    background-color: rgb(194, 194, 194);
+    animation: container_anim 8s 1 forwards;
+}
+
+.sky {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    z-index: 10;
+    background-image: linear-gradient(to bottom, rgb(115, 226, 251), white);
+}
+
+.grass {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, white, rgb(101, 250, 101));
+}
+
+@keyframes rain {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 550px
+    }
+}
+
+.drops {
+    transform: rotate(10deg);
+    margin-top: -100px;
+}
+
+.drop {
+    height: 10px;
+    width: 3px;
+    border-radius: 2px;
+    box-shadow: 0 0 2px 1px rgb(235, 237, 255);
+    position: absolute;
+    background-color: rgb(10, 147, 221);
+}
+
+.drop1 {
+    top: 0;
+    left: 50px;
+    animation: rain 0.7s 10;
+    animation-delay: 0;
+}
+
+.drop2 {
+    top: 0;
+    left: 90px;
+    animation: rain 0.9s 8;
+    animation-delay: 0.1s;
+}
+
+.drop3 {
+    top: 0;
+    left: 130px;
+    animation: rain 1.5s 6;
+    animation-delay: 0;
+}
+
+.drop4 {
+    top: 0;
+    left: 190px;
+    animation: rain 0.5s 15;
+    animation-delay: 0.3s;
+}
+
+.drop5 {
+    top: 0;
+    left: 225px;
+    animation: rain 0.8s 8;
+    animation-delay: 00.4s;
+}
+
+.drop6 {
+    top: 0;
+    left: 300px;
+    animation: rain 1.1s 7;
+    animation-delay: 0.4s;
+}
+
+.drop7 {
+    top: 0;
+    left: 380px;
+    animation: rain 0.7s 10;
+    animation-delay: 0.5s;
+}
+
+.drop8 {
+    top: 0;
+    left: 480px;
+    animation: rain 0.89s 9;
+    animation-delay: 0.35s;
+}
+
+.drop9 {
+    top: 0;
+    left: 570px;
+    animation: rain 1.5s 6;
+    animation-delay: 0.2s;
+}
+
+.drop10 {
+    top: 0;
+    left: 650px;
+    animation: rain 0.75s 10;
+    animation-delay: 0;
+}
+
+.tree {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    z-index: 20;
+    left: 250px;
+    animation: tree_anim 1s backwards;
+    animation-delay: 8s;
+}
+
+@keyframes tree_anim {
+    0% {
+        bottom: -300px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes container_anim {
+    0% {
+        background-color: rgb(229, 229, 229);
+    }
+
+    100% {
+        background-color: rgb(255, 255, 255);
+    }
+}
