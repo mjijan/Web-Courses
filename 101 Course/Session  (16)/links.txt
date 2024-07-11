@@ -1,0 +1,6 @@
+css responsive media
+https://www.w3schools.com/css/css_grid.asp
+
+semantic tags
+https://www.w3schools.com/html/html5_semantic_elements.asp
+
