@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    background-color: rgb(202, 202, 255);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding-top: 30px;
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(114, 114, 114);
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.c_roof , .c_body {
+    position: absolute;
+}
+
+.c_roof {
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    border-radius: 3px;
+    top: 220px;
+    left: 175px;
+}
+
+.c_body {
+    width: 250px;
+    height: 50px;
+    background-color: rgb(246, 255, 161);
+    border-radius: 3px;
+    top: 270px;
+    left: 125px;
+}
+
+.w1 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgb(194, 255, 200);
+    top: 310px;
+    left: 150px;
+}
+
+.w2 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgb(194, 255, 200);
+    top: 310px;
+    left: 310px;
+}
+
+.point1 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgb(0, 0, 0);
+    top: 325px;
+    left: 165px;
+}
+
+.point2 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgb(0, 0, 0);
+    top: 325px;
+    left: 325px;
+}
+
+.door {
+    position: absolute;
+    width: 5px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: rgb(0, 0, 0);
+    top: 280px;
+    left: 220px;
+}
