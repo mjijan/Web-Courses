@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    background-color: rgb(102, 154, 204);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.card,
+.logo,
+.nav {
+    display: inline-block;
+}
+
+.container {
+    padding: 30px;
+}
+
+header {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 20%;
+    height: 40px;
+    margin-right: 5%;
+    background-color: rgb(98, 111, 171);
+}
+
+.nav {
+    width: 75%;
+    height: 40px;
+    background-color: rgb(226, 208, 67);
+}
+
+main {
+    display: grid;
+    gap: 0 30px;
+    grid-template-columns: auto auto auto;
+}
+
+.card_head {
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.card_body {
+    background-color: rgb(204, 225, 255);
+    height: 300px;
+}
+
+.bg1 {
+    background-color: rgb(255, 215, 141);
+}
+
+.bg2 {
+    background-color: rgb(255, 176, 176);
+}
+
+.bg3 {
+    background-color: rgb(144, 254, 138);
+}
+
+@media only screen and (max-width : 960px) {
+
+    .logo,
+    .nav {
+        width: 50%;
+    }
+
+    main {
+        grid-template-columns: auto;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .card_head {
+        width: 40%;
+    }
+}
+
+
+@media only screen and (max-width : 550px) {
+
+    .logo {
+        width: 40%;
+    }
+
+    .nav {
+        width: 60%;
+    }
+
+    main {
+        grid-template-columns: auto;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .card_head,
+    .card_body {
+        width: 100%;
+    }
+
+    .card_body {
+        height: 200px;
+    }
+}
