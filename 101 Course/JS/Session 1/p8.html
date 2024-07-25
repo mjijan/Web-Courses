@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d1 {
+            background-color: greenyellow;
+            height: 30px;
+            padding: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    First Number : <input type="number" id="n1" /> <br>
+    Second Number : <input type="number" id="n2" /> <br>
+    <button onclick="f1()">+</button>
+    <div class="d1" id="r1"></div>
+</body>
+
+</html>
+
+<script>
+
+    function f1() {
+        var x = document.getElementById("n1").value;
+        var y = document.getElementById("n2").value;
+        var result = parseInt(x) + parseInt(y);
+        document.getElementById("r1").innerHTML = result;
+    }
+
+</script>
