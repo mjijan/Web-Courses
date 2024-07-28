@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 800px;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    background-color: rgb(228, 228, 228);
+    z-index: 1;
+    overflow: hidden;
+    animation: anim_back 11s forwards;
+}
+
+.sky {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top : 0;
+    z-index: 10;
+    background-image: linear-gradient(rgb(0, 46, 214) , rgba(97, 108, 253, 0.848));
+}
+
+.grass {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom : 0;
+    z-index: 10;
+    background-image: linear-gradient(rgb(23, 116, 0) , rgba(0, 145, 10, 0.848));
+}
+
+.drop {
+    width: 2px;
+    height: 15px;
+    border-radius: 2px;
+    background-color: rgb(186, 195, 255);
+    box-shadow: 0 0 2px 2px rgb(188, 188, 255);
+    position: absolute;
+    top: 0;
+    z-index: 5;
+}
+
+.d1 {
+    left: 50px;
+    animation: anim_drop 0.7s;
+    animation-iteration-count: 10;
+}
+.d2 {
+    left: 160px;
+    animation: anim_drop 0.9s;
+    animation-iteration-count: 12;
+}
+.d3 {
+    left: 280px;
+    animation: anim_drop 0.5s;
+    animation-iteration-count: 13;
+}
+.d4 {
+    left: 320px;
+    animation: anim_drop 1.4s;
+    animation-iteration-count: 7;
+}
+.d5 {
+    left: 400px;
+    animation: anim_drop 1s;
+    animation-iteration-count: 11;
+}
+.d6 {
+    left: 450px;
+    animation: anim_drop 0.8s;
+    animation-iteration-count: 6;
+}
+.d7 {
+    left: 550px;
+    animation: anim_drop 0.6s;
+    animation-iteration-count: 11;
+}
+.d8 {
+    left: 600px;
+    animation: anim_drop 0.4s;
+    animation-iteration-count: 13;
+}
+.d9 {
+    left: 690px;
+    animation: anim_drop 0.6s;
+    animation-iteration-count: 13;
+}
+.d10 {
+    left: 750px;
+    animation: anim_drop 1.3s;
+    animation-iteration-count: 8;
+}
+
+@keyframes anim_drop {
+    from {
+        top : 0;
+    }
+    to {
+        top : 600px
+    }
+}
+
+.drops {
+    transform: rotate(10deg);
+}
+
+.sun {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: rgb(237, 237, 17);
+    position: absolute;
+    z-index: 10;
+    top: -100px;
+    right: 20px;
+    animation: anim_sun 1s forwards;
+    animation-delay: 11s;
+}
+
+@keyframes anim_sun {
+    from {
+        top : -100px
+    }
+
+    to {
+        top : 20px
+    }
+}
+
+@keyframes anim_back {
+    0% {
+        background-color: rgb(228, 228, 228);
+    }
+    75% {
+        background-color:  rgb(228, 228, 228);
+    }
+    100% {
+        background-color: rgb(214, 251, 254);
+    }
+}
