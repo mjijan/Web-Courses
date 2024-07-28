@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: rgb(177, 210, 255);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 0;
+}
+
+.num {
+    width: 100%;
+    background-color: rgb(71, 71, 71);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
