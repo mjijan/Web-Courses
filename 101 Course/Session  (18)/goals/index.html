@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball {
+            position: absolute;
+            left: 0;
+            top: 0;
+            animation: anim_ball 2s forwards ease;
+            transform: rotate(0);
+        }
+        @keyframes anim_ball {
+            from {
+                left: 0;
+                transform: rotate(0);
+            }
+            to {
+                left: 1000px;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <span class="ball" style='font-size:100px; '>&#9917;</span>
+</body>
+</html>
