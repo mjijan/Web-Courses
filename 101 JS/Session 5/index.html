@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+        .result {
+            background-color: yellow;
+            font-weight: bold;
+            padding: 4px 10px;
+            display: inline-block;
+            width: 500px;
+            text-align: center;
+            min-height: 20px;
+            vertical-align: top;
+        }
+
+        button {
+            height: 25px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label>Name: </label>
+        <input type="text" id="stu_name" />
+
+        <label>Avg: </label>
+        <input type="text" id="stu_avg" />
+
+        <button onclick="add_stu()">Add</button>
+        <br><br>
+
+    </div>
+    <button onclick="print_all()">Print Students</button>
+    <span class="result" id="result1"></span>
+    <br> <br>
+    <button onclick="max()">Max</button>
+    <span class="result" id="result2"></span>
+</body>
+
+</html>
