@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .result {
+            background-color: yellow;
+            font-weight: bold;
+            padding: 4px 10px;
+            display: inline-block;
+            width: 500px;
+            text-align: center;
+            min-height: 20px;
+            vertical-align: top;
+        }
+
+        button {
+            height: 25px;
+            width: 100px;
+        }
+
+        .elem {
+            display: inline-block;
+            min-width: 50px;
+            border: 3px solid #000;
+            padding: 5px;
+            text-align: center;
+            margin-left: -6px;
+        }
+
+        .elements {
+            padding-left: 50px;
+        }
+
+        .found {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label>Name: </label>
+        <input type="text" id="stu_name" />
+
+        <label>Avg: </label>
+        <input type="text" id="stu_avg" />
+
+        <button onclick="add_stu()">Add</button>
+        <br><br>
+
+    </div>
+    <button onclick="print_all()">Print Students</button>
+    <span class="result" id="result1"></span>
+    <br> <br>
+
+    <label>Seach for student: </label>
+    <input type="text" id="search_name" />
+
+    <button onclick="search_stu()">Search</button>
+
+    <br> <br>
+
+
+    <button onclick="max()">Max</button>
+    <span class="result" id="result2"></span>
+    <br> <br>
+    <div class="elements" id="elements">
+        <!-- <div class="elem">Israa</div> -->
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
