@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my_data {
+            background-color: gold;
+            min-height: 300px;
+            width: 300px;
+        }
+
+        button {
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 20px;
+            background: red;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1" onclick="change_timer()">Start Timer</button>
+    <div class="my_data" id="my_data"></div>
+
+</body>
+
+</html>
+
+<script>
+    var timer_id;
+    var timer_state = false;
+
+    function change_timer() {
+        if (timer_state == false) {
+            timer_id = setInterval(print_hi, 20);
+            document.getElementById("btn1").innerHTML = "Stop Timer";
+            document.getElementById("btn1").style.background = "green";
+            timer_state = true;
+        }
+        else {
+            clearInterval(timer_id);
+            document.getElementById("btn1").innerHTML = "Start Timer";
+            document.getElementById("btn1").style.background = "red";
+            timer_state = false;
+        }
+
+
+    }
+
+
+    function print_hi() {
+        document.getElementById("my_data").innerHTML += "Hi , "
+    }
+
+
+</script>

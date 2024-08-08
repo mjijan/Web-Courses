@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my_data {
+            background-color: gold;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1" onclick="start_timer()">Start Timer</button>
+    <button id="btn2" onclick="stop_timer()" disabled>Stop Timer</button>
+    <div class="my_data" id="my_data"></div>
+
+</body>
+
+</html>
+
+<script>
+    var timer_id;
+
+    function start_timer() {
+        timer_id = setInterval(print_hi, 20);
+        document.getElementById("btn1").disabled = true;
+        document.getElementById("btn2").disabled = false;
+    }
+
+    function stop_timer() {
+        clearInterval(timer_id);
+        document.getElementById("btn1").disabled = false;
+        document.getElementById("btn2").disabled = true;
+    }
+
+    function print_hi() {
+        document.getElementById("my_data").innerHTML += "Hi , "
+    }
+
+
+</script>

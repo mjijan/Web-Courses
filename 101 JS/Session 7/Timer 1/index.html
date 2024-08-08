@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my_data {
+            background-color: gold;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="my_data" id="my_data"></div>
+
+</body>
+
+</html>
+
+<script>
+    function print_hi() {
+        document.getElementById("my_data").innerHTML += "Hi , "
+    }
+
+    setInterval(print_hi, 20);
+
+</script>

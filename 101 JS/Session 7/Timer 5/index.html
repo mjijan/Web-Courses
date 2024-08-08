@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .my_data {
+            background-color: gold;
+            min-height: 500px;
+            width: 800px;
+            margin: auto;
+            border-radius: 10px;
+            padding: 10px;
+            border: 5px ridge #7c7c7c;
+        }
+
+        button {
+            width: 800px;
+            margin: auto;
+            padding: 10px;
+            margin-bottom: 20px;
+            background: red;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            display: block;
+            border-radius: 10px;
+            border: 5px ridge #7c7c7c;
+        }
+
+        button:hover {
+            background: rgb(221, 0, 0);
+        }
+
+        .blk {
+            padding: 5px;
+            width: 40px;
+            background-color: yellowgreen;
+            display: inline-block;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1" onclick="change_timer()">Start Timer</button>
+    <div class="my_data" id="my_data"></div>
+
+</body>
+
+</html>
+
+<script>
+    var timer_id;
+    var timer_state = false;
+
+    function change_timer() {
+        if (timer_state == false) {
+            timer_id = setInterval(print_hi, 100);
+            document.getElementById("btn1").innerHTML = "Stop Timer";
+            document.getElementById("btn1").style.background = "green";
+            timer_state = true;
+        }
+        else {
+            clearInterval(timer_id);
+            document.getElementById("btn1").innerHTML = "Start Timer";
+            document.getElementById("btn1").style.background = "red";
+            timer_state = false;
+        }
+
+
+    }
+
+
+    function print_hi() {
+        document.getElementById("my_data").innerHTML += "<div class='blk'>Hi</div>"
+    }
+
+
+</script>
