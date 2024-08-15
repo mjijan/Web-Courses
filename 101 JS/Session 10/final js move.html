@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<style>
+    #container {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: yellow;
+    }
+
+    #animate {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: red;
+    }
+</style>
+
+<body>
+
+    <p><button onclick="myMove()">Click Me</button></p>
+
+    <div id="container">
+        <div id="animate"></div>
+    </div>
+
+    <script>
+        let id = null;
+        var direction = "right";
+
+        function myMove() {
+
+            const elem = document.getElementById("animate");
+            let pos = 0;
+            id = setInterval(frame, 5);
+            function frame() {
+                console.log(direction + " : " + pos);
+                if (direction == "right") {
+                    elem.style.left = pos + "px";
+                    pos++;
+                }
+                else if (direction == "bottom") {
+                    elem.style.top = pos + "px";
+                    pos++;
+                }
+                else if (direction == "left") {
+                    elem.style.left = pos + "px";
+                    pos--;
+                }
+                else if (direction == "top") {
+                    elem.style.top = pos + "px";
+                    pos--;
+                }
+
+                if (direction == "right" && pos >= 350) {
+                    pos = 0;
+                    direction = "bottom";
+                }
+                else if (direction == "bottom" && pos >= 350) {
+                    pos = 350;
+                    direction = "left";
+                }
+                else if (direction == "left" && pos <= 0) {
+                    pos = 350;
+                    direction = "top";
+                }
+                else if (direction == "top" && pos <= 0) {
+                    pos = 0;
+                    direction = "right";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
