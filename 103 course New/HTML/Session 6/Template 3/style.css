@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom right , rgb(33,203,247) , rgb(95,96,179));
+}
+html{
+    height: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container {
+    width: 600px;
+    height: 375px;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+   
+}
+
+.left {
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    padding-top: 50px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 3px 5px 8px 0 rgb(59, 59, 59);
+}
+.right {
+    background-color: rgb(29, 143, 225);
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 3px 5px 8px 0 rgb(59, 59, 59);
+}
+
+.left .title {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.icons {
+    width: 250px;
+    display: flex;
+    margin: auto;
+    margin-left: 45px;
+}
+.imgA {
+    width: 20px;
+    height: 20px;
+}
+.icon_div {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid  rgb(29, 143, 225);
+    margin-right: 20px;
+    text-align: center;
+    padding-top: 7px;
+}
+.or{
+    font-size: 13px;
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(48, 48, 48);
+    margin-bottom: 7px;
+}
+.inp1 {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background-color: rgb(238, 238, 238);
+    border: none;
+}
+.forget {
+    color: rgb(29, 143, 229);
+    text-align: center;
+    font-size: 13px;
+}
+.btn1{
+    width: 170px;
+    padding: 7px;
+    background-color: rgb(29, 143, 225);
+    border-radius: 10px;
+    border: none;
+    display: block;
+    margin: auto;
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.right .title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 20px;
+}
+
+.txt1 {
+    font-size: 13px;
+    margin: 20px;
+    letter-spacing: 1px;
+}
+
+.txt2 {
+    font-size: 10px;
+    margin-top: 20px;
+    letter-spacing: 0.55px;
+}
+
+.txt3 {
+    font-size: 12px;
+    color: rgb(14,14,92);
+    margin-top: 10px;
+    text-decoration: underline;
+}
