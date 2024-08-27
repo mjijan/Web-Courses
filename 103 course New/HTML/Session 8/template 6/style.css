@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    margin-top: 25px;
+}
+.card {
+    width: 350px;
+    height: 600px;
+    border-radius: 15px;
+    display: inline-block;
+    padding-top: 40px;
+    color: white;
+    margin-right: 20px;
+}
+.card:hover{
+    box-shadow: 0 0 10px 2px rgba(131, 131, 131, 0.641);
+    cursor: pointer;
+}
+.card1 {
+    background-image: linear-gradient(to right bottom ,rgb(100,178,252) , rgb(246,55,212) );
+}
+.icon_div {
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    color: white;
+    box-shadow: 0 6px 15px 0px rgba(102, 102, 102, 0.476);
+    margin: auto;
+    padding-top: 10px;
+}
+.my_icon {
+    font-size: 80px;
+    margin-left: 12px;
+}
+.title {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 20px;
+}
+.price_dollar{
+    text-align: center;
+}
+.dollar {
+    font-size: 45px;
+    display: inline-block;
+    margin-top: -10px;
+    vertical-align: top;
+}
+.price {
+    font-size: 70px;
+    display: inline-block;
+}
+.text {
+    display: inline-block;
+}
+.txt1 {
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+.btn1{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 150px;
+    border-radius: 25px;
+    color: rgb(94, 94, 94);
+    border: none;
+    margin-top: 20px;
+}
