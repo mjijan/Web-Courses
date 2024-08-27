@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            background-color: rgb(253, 253, 193);
+            height: 500px;
+            overflow-y: auto;
+            font-size: 40px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="start_timer()">start</button>
+    <button onclick="stop_timer()">Stop</button>
+    <div class="main" id="main"></div>
+
+    <script>
+        var id = setInterval( f , 100);
+
+        function f()
+        {
+            document.getElementById("main").innerHTML += "HI ";
+        }
+
+        function start_timer()
+        {
+            id = setInterval( f , 100);
+        }
+
+        function stop_timer()
+        {
+            clearInterval(id);
+        }
+    </script>
+</body>
+</html>
