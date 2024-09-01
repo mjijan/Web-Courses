@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+}
+.container {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: rgb(53, 53, 53);
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+}
+.d {
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+}
+.d1 {
+    width: 120px;
+    height: 70px;
+    left: 50px;
+    top: 180px;
+}
+.d2 {
+    width: 250px;
+    height: 100px;
+    left: 50px;
+    top: 255px;
+    z-index: 10;
+}
+.d3 {
+    width: 40px;
+    height: 40px;
+    border-radius: 100% !important;
+    left: 80px;
+    top: 330px;
+    border: 10px ridge black;
+}
+.d4 {
+    width: 40px;
+    height: 40px;
+    border-radius: 100% !important;
+    left: 215px;
+    top: 330px;
+    border: 10px ridge black;
+}
+.d5 {
+    width: 15px;
+    height: 25px;
+    background-color: rgb(245, 245, 0);
+    border-radius: 100% !important;
+    left: 295px;
+    top: 275px;
+}
+.d6 {
+    width: 15px;
+    height: 25px;
+    background-color: rgb(245, 245, 0);
+    border-radius: 100% !important;
+    left: 295px;
+    top: 315px;
+}
+.roro {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(174, 173, 255);
+    left: 295px;
+    top: 50px;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+.line {
+    width: 175px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    left: 170px;
+    top: 175px;
+    position: absolute;
+    transform: rotate(-2deg);
+}
