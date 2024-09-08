@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        img {
+            position: relative;
+        }
+        .d1 , .d2 , .d3 {
+            position: absolute;
+            top: 145px;
+            font-size: 30px;
+            color: yellow;
+            font-weight: bold;
+            background-color: rgba(183, 0, 0, 0.303);
+            width: 145px;
+            text-align: center;
+        }
+        .d1 {
+            left: 20px;
+        }
+        .d2 {
+            left: 195px;
+        }
+        .d3 {
+            left: 370px;
+        }
+        .img1:hover  {
+            top : -500px !important;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Image Transparency</h1>
+    <p>The opacity property is often used together with the :hover selector to change the opacity on mouse-over:</p>
+
+    <img class="img1" src="img_forest.jpg" alt="Forest" width="170" height="100">
+    <div class="d1">D1</div>
+
+    <img class="img2" src="img_mountains.jpg" alt="Mountains" width="170" height="100">
+    <div class="d2">D2</div>
+
+    <img class="img3" src="img_5terre.jpg" alt="Italy" width="170" height="100">
+    <div class="d3">D3</div>
+
+</body>
+</html>
+
+
