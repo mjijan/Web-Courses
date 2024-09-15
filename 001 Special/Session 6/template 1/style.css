@@ -1,0 +1,53 @@
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: linear-gradient(to bottom right , rgb(30,9,80) 50% , rgb(248,52,95));
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 900px;
+    height: 440px;
+    background-color: rgb(68, 196, 229);
+    margin: auto;
+    margin-top: 150px;
+    padding-top: 70px;
+}
+
+.my-form {
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    padding: 40px;
+}
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(51, 179, 210);
+}
+
+.inp1 , .btn1 {
+    width: 100%;
+    height: 43px;
+    margin-top : 20px ;
+    font-size: 16px;
+}
+
+.btn1 {
+    background-color: rgb(68, 196, 229);
+    color: white;
+    border: none;
+}
+
+.inp1 {
+    padding: 15px;
+}
