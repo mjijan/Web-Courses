@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: rgb(96, 96, 96);
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    border-radius: 20px;
+    border: 10px ridge rgb(179, 0, 0);
+}
+
+.letter {
+    position: absolute;
+    top: 25px;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(120, 39, 39);
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.d {
+    left: 200px;
+    animation: anim 1s forwards;
+}
+.e {
+    left: 250px;
+    animation: anim 1s forwards 0.75s;
+}
+.s {
+    left: 300px;
+    animation: anim 1s forwards 1.5s;
+}
+.i {
+    left: 350px;
+    animation: anim 1s forwards 2.25s;
+}
+.g {
+    left: 375px;
+    animation: anim 1s forwards 3s;
+}
+.n {
+    left: 425px;
+    animation: anim 1s forwards 3.75s;
+}
+
+@keyframes anim {
+    0%{top : 25px}
+    50%{top : 300px ; color: white;  text-shadow: 0 0 5px rgb(131, 16, 16); font-size: 80px;}
+    100%{top : 25px}
+}

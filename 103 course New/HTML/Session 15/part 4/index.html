@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="letter d" onmouseover="add_animation(this)">D</div>
+        <div class="letter e" onmouseover="add_animation(this)">E</div>
+        <div class="letter s" onmouseover="add_animation(this)">S</div>
+        <div class="letter i" onmouseover="add_animation(this)">I</div>
+        <div class="letter g" onmouseover="add_animation(this)">G</div>
+        <div class="letter n" onmouseover="add_animation(this)">N</div>
+    </div>
+</body>
+</html>
+
+<script>
+    function add_animation(elem)
+    {
+        elem.classList.add("add_animation");
+        setTimeout(function(){ elem.classList.remove("add_animation") }, 600);
+    }
+    
+</script>
