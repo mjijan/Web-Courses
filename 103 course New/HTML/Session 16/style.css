@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.container {
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(227, 227, 227);
+    position: relative;
+    overflow: hidden;
+    animation: anim_container 10s forwards;
+}
+.sky , .grass{
+    width: 100%;
+    height: 100px;
+}
+.sky {
+    background-image: linear-gradient(to bottom , rgb(48, 107, 202) , rgb(20, 59, 132));
+    z-index: 10;
+    position: relative;
+}
+.grass {
+    background-image: linear-gradient(to bottom , rgb(4, 165, 52) , rgb(0, 98, 17));
+    position: absolute;
+    bottom: 0;
+    z-index: 20;
+}
+.drop {
+    width: 2px;
+    height: 20px;
+    border-radius: 2px;
+    box-shadow: 0 0 2px 1px rgb(150, 153, 160);
+    background-color: rgb(71, 75, 84);
+    position: absolute;
+    top: -100px;
+    z-index: 5;
+}
+.d1 {
+    left: 40px;
+    animation: anim 1s 8;
+}
+.d2 {
+    left: 100px;
+    animation: anim 0.7s 11 ;
+}
+.d3 {
+    left: 150px;
+    animation: anim 0.9s 10 ;
+}
+.d4 {
+    left: 200px;
+    animation: anim 0.6s 13 ;
+}
+.d5 {
+    left: 260px;
+    animation: anim 1.2s 8 ;
+}
+.d6 {
+    left: 320px;
+    animation: anim 1.3s 7 ;
+}
+.d7 {
+    left: 450px;
+    animation: anim 0.8s 12 ;
+}
+.d8 {
+    left: 550px;
+    animation: anim 0.6s 15 ;
+}
+.d9 {
+    left: 640px;
+    animation: anim 0.89s 11 ;
+}
+.d10 {
+    left: 720px;
+    animation: anim 1.1s 9 ;
+}
+.drops {
+    transform: rotate(6deg);
+}
+@keyframes anim{
+    0% { top : -100px}
+    100% {top : 500px}
+}
+
+@keyframes anim_container {
+    0% {background-color: rgb(227, 227, 227);}
+    90% {background-color: rgb(227, 227, 227);}
+    100% {background-color: rgb(255, 255, 169);}
+}
+
+.sun {
+    width: 100px;
+    position: absolute;
+    top: -100px;
+    right: 3px;
+    animation: anim_sun 0.5s forwards 8.5s;
+    z-index: 1000;
+    transform: rotate(20deg);
+}
+
+.tree {
+    height: 250px;
+    position: absolute;
+    top: 900px;
+    left: 100px;
+    z-index: 1000;
+    animation: anim_tree 4s forwards 8.1s;
+}
+
+.bird {
+    width: 60px;
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    z-index: 1000;
+    animation: anim_bird 4.5s forwards linear 2 ;
+}
+
+@keyframes anim_sun {
+    0% { top: -100px;}
+    100% { top: 3px;}
+}
+
+@keyframes anim_tree {
+    0% { top: 900px;}
+    100% { top: 200px;}
+}
+
+@keyframes anim_bird {
+    0% { right: -20px; top: 20px;}
+    100% { right: 800px; top: 40px;}
+}
