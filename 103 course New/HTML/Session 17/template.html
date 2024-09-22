@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.container{
+  width: 90%;
+  padding: 20px;
+  padding-top: 0;
+  margin: auto;
+  box-shadow: 0 0 5px 2px rgb(176, 176, 176);
+}
+
+.row1{
+  column-gap: 10px;
+  display: grid;
+}
+
+.cell1{
+  background-color: rgb(252, 162, 52);
+}
+
+.row2{
+  display: grid;
+  margin-top: 20px;
+}
+
+.cell2{
+  background-color: rgb(220, 228, 4);
+}
+
+
+.row3{
+  display: grid;
+  column-gap: 10px;
+  margin-top: 20px;
+}
+
+.cell3{
+  background-color: rgb(32, 146, 233);
+}
+
+.row4{
+  display: grid;
+  column-gap: 10px;
+  margin-top: 20px;
+}
+
+.cell4{
+  background-color: rgb(154, 154, 154);
+}
+
+.row1{
+    grid-template-columns: auto ;
+    row-gap: 10px;
+    height: 100px;
+  }
+  .row2{
+    grid-template-columns: auto;
+    height: 150px;
+  }
+  .row3{
+    grid-template-columns: auto  ;
+    height: 250px;
+    row-gap: 10px;
+  }
+  .row4{
+    grid-template-columns: auto ;
+    height: 200px;
+    row-gap: 10px;
+  }
+
+
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: rgb(201, 204, 255);
+  }
+  .row1{
+    grid-template-columns: auto ;
+    row-gap: 10px;
+    height: 100px;
+  }
+  .row2{
+    grid-template-columns: auto;
+    height: 150px;
+  }
+  .row3{
+    grid-template-columns: auto  ;
+    height: 250px;
+    row-gap: 10px;
+  }
+  .row4{
+    grid-template-columns: auto auto ;
+    height: 200px;
+    row-gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: rgb(255, 210, 210);
+  }
+  .row1{
+    grid-template-columns: auto auto;
+    height: 75px;
+  }
+  .row2{
+    grid-template-columns: auto;
+    height: 200px;
+  }
+  .row3{
+    grid-template-columns: auto auto auto;
+    height: 160px;
+  }
+  .row4{
+    grid-template-columns: auto auto auto auto;
+    height: 120px;
+  }
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="row1">
+      <div class="cell1"></div>
+      <div class="cell1"></div>
+    </div>
+
+    <div class="row2">
+      <div class="cell2"></div>
+    </div>
+
+    <div class="row3">
+      <div class="cell3"></div>
+      <div class="cell3"></div>
+      <div class="cell3"></div>
+    </div>
+
+    <div class="row4">
+      <div class="cell4"></div>
+      <div class="cell4"></div>
+      <div class="cell4"></div>
+      <div class="cell4"></div>
+    </div>
+  </div>
+</body>
+</html>
