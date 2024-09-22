@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom right , rgb(142,198,255) , rgb(210,196,252) );
+    background-repeat: no-repeat;
+}
+html{
+    height: 100%;;
+}
+* {
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+}
+.container {
+    width: 850px;
+    height: 750px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+}
+.left{
+    width: 50%;
+    height: 100%;
+    /* display: inline-block; */
+    background-image: url('imgs/bg.jpg');
+    background-size: cover;
+    border-radius: 15px 0 0 15px;
+    color: white;
+    font-weight: bold;
+    padding: 25px;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    /* display: inline-block; */
+    border-radius: 0 15px 15px 0;
+    background-color: rgb(255, 255, 255);
+}
+.txt1{
+    font-size: 32px;
+    margin-top: 495px;
+}
+.txt2{
+    font-size: 26px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.txt3{
+    font-size: 38px;
+    margin-top: 70px;
+    margin-left: 200px;
+    display: inline-block;
+}
+.txt4{
+    font-size: 18px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.title{
+    font-size: 28px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+.lbl1{
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: rgb(164, 164, 164);
+}
+.inp{
+    width: 100%;
+    padding : 13px;
+    border-radius: 2.5px;
+    border: 1px solid rgb(219, 219, 219);
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+.inp::placeholder {
+    color: rgb(192, 192, 192);
+}
+
+.chk1{
+    margin-top: 30px;
+}
+
+.lbl2{
+    font-weight: bold;
+    color: rgb(164, 164, 164);
+    margin-left: 10px;
+}
+.a1 {
+    color: rgb(42, 92, 163);
+    display: block;
+    font-weight: bold;
+    margin-left: 34.45px;
+    margin-top: 10px;
+}
+.btn1{
+    background-color: rgb(60,99,202);
+    color: white;
+    font-weight: bold;
+    width: 160px;
+    height: 50px;
+    border: none;
+    margin-top: 32px;
+    font-size: 17.5px;
+    border-radius: 7px;
+}
