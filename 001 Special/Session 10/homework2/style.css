@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --colo1 : rgb(232, 76, 61);
+}
+* {
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+}
+.container {
+    width: 1200px;
+    height: 800px;
+    margin: auto;
+    display: flex;
+    column-gap: 10px;
+}
+.card {
+    width: 300px;
+    height: 100%;
+    color: white;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.card1{
+    background-color: var(--colo1)
+}
+.card2{
+    background-color: rgb(0, 164, 25);
+}
+.card3{
+    background-color: rgb(161, 0, 151);
+}
+.card4{
+    background-color: rgb(0, 80, 114);
+}
+.title {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+.desc {
+    font-size: 22px;
+    margin-bottom: 60px;
+}
+.spes{
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.icon1 {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    border-radius: 100%;
+    background-color: white;
+    color: var(--colo1);
+    text-align: center;
+    font-weight: bold;
+    vertical-align: top;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.price {
+    background-color: rgba(255, 255, 255, 0.111);
+    height: 110px;
+    position: relative;
+    left: -38px;
+    width: 300px;
+    font-weight: lighter;
+}
+.price1{
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    font-size: 35px;
+}
+.price2{
+    position: absolute;
+    top: 7px;
+    left: 60px;
+    font-size: 50px;
+}
+.price3{
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    font-size: 40px;
+}
+.price4{
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    font-size: 20px;
+}
+.most{
+    position: absolute;
+    background-color: rgb(154, 0, 0);
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+    top: -10px;
+    left: 170px;
+    height: 60px;
+    padding-top: 30px;
+    transform: rotate(45deg);
+}
