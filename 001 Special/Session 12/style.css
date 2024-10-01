@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    --color1 : rgb(255,107,100);
+    --color2 : rgb(1,137,236);
+}
+* {
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+}
+.container {
+    width: 1100px;
+    margin: auto;
+    padding: 10px 30px;
+    background-color: rgb(31,113,127);
+    min-height: 700px;
+    position: relative;
+    background-image: url('imgs/finals.png');
+    background-position: 600px 50px;
+    background-repeat: no-repeat;
+    background-size: auto 750px;
+}
+nav {
+    height: 60px;
+    padding: 5px 50px;
+    padding-bottom: 80px;
+}
+.logo {
+    height: 60px;
+    vertical-align:middle;
+    margin-right: 40px;
+}
+.menu {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    width: 650px;
+    vertical-align:middle;
+}
+.menu-item {
+    margin-right: 40px;
+    vertical-align:middle;
+}
+.btn1{
+    width: 130px;
+    padding: 15px;
+    background-color: transparent;
+    border: 2px white solid;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+.hr1{
+    margin-top: 20px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.207);
+}
+main {
+    height: 750px;
+    width: 700px;
+    padding: 100px 50px;
+}
+.title {
+    font-size: 90px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.634);
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.red {
+    color: var(--color1);
+}
+.desc{
+    font-size: 12px;
+    width: 500px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 17px;
+    margin-top: 20px;
+}
+.inp1 {
+    width: 250px;
+    padding: 25px 20px;
+    border: none;
+    background-color: var(--color2);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 50px;
+    margin-top: 50px;
+    outline: none;
+}
+.inp1::placeholder{
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+.btn2 {
+    width: 150px;
+    padding: 25px 20px;
+    border: none;
+    background-color: var(--color1);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    height: 90px;
+    border-radius: 50px;
+    margin-top: 50px;
+    outline: none;
+    position: relative;
+    left: -50px;
+    border: 1px solid white;
+}
+.circle {
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border-radius: 100%;
+}
+.c1 {
+    top: 400px;
+    right: 80px;
+}
+.c2 {
+    top: 425px;
+    right: 80px;
+    background-color: rgba(255, 255, 255, 0.402);
+}
+.c3 {
+    top: 450px;
+    right: 80px;
+    background-color: rgba(255, 255, 255, 0.402);
+}
+.c4 {
+    top: 475px;
+    right: 80px;
+    background-color: rgba(255, 255, 255, 0.402);
+}

@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(109, 143, 151);
+}
+:root {
+    --color1 : rgb(33,56,62);
+}
+* {
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+}
+.container {
+    width: 1400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+    min-height: 600px;
+    margin-top: 50px;
+}
+.header {
+    width: 100%;
+    padding: 30px;
+    height: 700px;
+    border-radius: 15px;
+    background-color: rgb(215, 215, 215);
+    background-image: url('imgs/header_bg.png');
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    padding-top: 0;
+}
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 600px;
+    margin-left: 275px;
+}
+ul li {
+    color: var(--color1);
+    padding: 5px;
+    margin-right: 25px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+}
+.logo {
+    margin-left: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    vertical-align: top;
+}
+.site_name {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--color1);
+  margin-left: 5px;
+  margin-top: -10px;
+}
+.btn1{
+    margin-left: 85px;
+    font-weight: bold;
+    width: 110px;
+    color: var(--color1);
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+}
+.title{
+    font-size: 65px;
+    color: var(--color1);
+    width: 500px;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.desc{
+    font-size: 16px;
+    color: var(--color1);
+    width: 400px;
+    margin-left: 100px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+.inputs{
+    padding: 10px;
+    background-color: white;
+    border-radius: 50px;
+    width: 600px;
+    height: 90px;
+    margin-left: 100px;
+    margin-top: 40px;
+    line-height: 30px;
+}
+.lbl1 , .inp1{
+    display: block;
+    margin-left: 30px;
+}
+.btn2 {
+    float: right;
+    display: block;
+    margin-top: -55px;
+    font-weight: bold;
+    width: 200px;
+    background-color: rgb(48, 95, 99);
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+    color: white;
+    height: 67px;
+    font-size: 16px;
+}
+.lbl1{
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color:rgb(140, 140, 140);
+    width: 400px;
+    margin-top: 5px;
+    vertical-align: top;
+}
+.inp1{
+    width: 250px;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.inp1::placeholder{
+    color: black;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
