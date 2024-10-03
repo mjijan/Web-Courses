@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --height1 : 800px;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            background-color: rgb(4, 0, 88);
+            width: 800px;
+            height: var(--height1);
+            position: relative;
+            margin: auto;
+        }
+        .letter {
+            position: absolute;
+            font-size: 60px;
+            font-weight: bold;
+            top : 50px;
+            color: white;
+        }
+        .K{
+            left: 100px;
+            animation: my_animo 2s  ease-out ;
+        }
+        .H{
+            left: 175px;
+            animation: my_animo 2s 2s  ease-out;
+        }
+        .M{
+            left: 250px;
+            animation: my_animo 2s 4s  ease-out;
+        }
+        .S{
+            left: 325px;
+            animation: my_animo 2s 6s  ease-out;
+        }
+        .Y{
+            left: 400px;
+            animation: my_animo 2s 8s  ease-out;
+        }
+        .F{
+            left: 475px;
+            animation: my_animo 2s 10s  ease-out;
+        }
+        .D{
+            left: 550px;
+            animation: my_animo 2s 12s  ease-out;
+        }
+        .O{
+            left: 625px;
+            animation: my_animo 2s 14s  ease-out;
+        }
+
+        @keyframes my_animo
+        {
+            0% {top : 50px ; transform: rotate(0); font-size: 60px; color: white;}
+            50% {top : calc( var(--height1) - 100px ); transform: rotate(360deg); font-size: 100px; color: rgb(243, 243, 0);}
+            100% {top : 50px; transform: rotate(0); font-size: 60px; color: white;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="letter K">K</div>
+        <div class="letter H">H</div>
+        <div class="letter M">M</div>
+        <div class="letter S">S</div>
+        <div class="letter Y">Y</div>
+        <div class="letter F">F</div>
+        <div class="letter D">D</div>
+        <div class="letter O">O</div>
+    </div>
+    
+</body>
+</html>
