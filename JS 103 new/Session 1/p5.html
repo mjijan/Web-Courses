@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .inp {
+            background-color: rgb(2, 48, 128);
+            color: white;
+            padding: 5px;
+            width: 300px;
+            height: 50px;
+            display: block;
+            font-size: 30px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .inp::placeholder{
+            color: rgb(157, 133, 245);
+            font-weight: bold;
+        }
+        .inp1 {
+            background-color: rgb(59, 59, 59);
+            color: white;
+            padding: 5px;
+            width: 300px;
+            height: 50px;
+            display: block;
+            font-size: 30px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .inp2 {
+            background-color: rgb(124, 0, 0);
+            color: white;
+            padding: 5px;
+            width: 300px;
+            height: 50px;
+            display: block;
+            font-size: 30px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <input id="n1" class="inp" placeholder="First Number" />
+    <input id="n2" class="inp" placeholder="Second Number" />
+    <button onclick="f(1)" class="inp1">+</button>
+    <button onclick="f(2)" class="inp1">-</button>
+    <button onclick="f(3)" class="inp1">*</button>
+    <button onclick="f(4)" class="inp1">/</button>
+    <div class="inp2" id="R"></div>
+    <script>
+
+        function f( operation)
+        {
+            var x = parseInt( document.getElementById("n1").value );
+            var y = parseInt( document.getElementById("n2").value );
+
+            if (operation == 1)
+                var result = x + y;
+            else if (operation == 2)
+                var result = x - y;
+            else if (operation == 3)
+                var result = x * y;
+            else if (operation == 4)
+                var result = x / y;
+            
+            document.getElementById("R").innerHTML = result;
+        }
+        
+    </script>
+</body>
+</html>
