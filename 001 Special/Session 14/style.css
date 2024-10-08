@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.container{
+    width: 800px;
+    height: 700px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+    border: 10px ridge rgb(47, 47, 47);
+    overflow: hidden;
+    background-image: linear-gradient(to bottom , rgba(164, 211, 239, 0.797) , white 65% , rgb(255, 255, 255));
+    position: relative;
+    z-index: 100;
+}
+.drops {
+    transform: rotate(6deg);
+    margin-top: -300px;
+}
+.drop {
+    position: absolute;
+    top : 0px;
+    height: 30px;
+    width: 3px;
+    background-color: rgb(47, 138, 208);
+    z-index: 10;
+}
+.d1 {
+    left: 70px;
+    animation: anim1 1s 10;
+}
+.d2 {
+    left: 133px;
+    animation: anim1 0.7s 13 ;
+}
+.d3 {
+    left: 220px;
+    animation: anim1 1.4s 8;
+}
+.d4 {
+    left: 293px;
+    animation: anim1 1.1s 9;
+}
+.d5 {
+    left: 362px;
+    animation: anim1 0.9s 12;
+}
+.d6 {
+    left: 415px;
+    animation: anim1 1.62s 5;
+}
+.d7 {
+    left: 477px;
+    animation: anim1 0.78s 13;
+}
+.d8 {
+    left: 526px;
+    animation: anim1 0.5s 18;
+}
+.d9 {
+    left: 602px;
+    animation: anim1 0.9s 13;
+}
+.d10 {
+    left: 679px;
+    animation: anim1 1.2s 9;
+}
+
+@keyframes anim1 {
+    0% { top : 20px; opacity: 1;}
+    100% { top : 700px; opacity: 0.2;}
+}
+
+@keyframes anim2 {
+    0% { top : -500px; left : -200px }
+    100% {  top: -50px; left: 0;}
+}
+
+@keyframes anim3 {
+    0% { height: 200px; bottom: 0px; left: 50px;}
+    100% {  height: 400px; bottom: 0px;left: -50px;}
+}
+
+@keyframes anim4 {
+    0% {   filter: drop-shadow(0px 0px 0px gray);}
+    100% {   filter: drop-shadow(0px 8px 10px rgb(78, 78, 78));}
+}
+
+@keyframes anim5 {
+    0% {   left: 800px; top : 20px}
+    100% {   left: -200px; top : -100px}
+}
+.sky{
+    width: 100%;
+    position: relative;
+    z-index: 50;
+}
+.house {
+    width: 70%;
+    position: absolute;
+    bottom: -150px;
+    left: 250px;
+    z-index: 150;
+    animation: anim4 1s forwards 14s;
+}
+.grass {
+    width: 100%;
+    position: absolute;
+    bottom: -200px;
+    z-index: 20;
+}
+.tree {
+    height: 200px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 100;
+    animation: anim3 15s forwards;
+}
+.sun {
+    width: 250px;
+    position: absolute;
+    top: -500px;
+    left: -200px;
+    z-index: 100;
+    animation: anim2 5s forwards 11s;
+}
+
+.airplane {
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    left: 800px;
+    z-index: 100;
+    animation: anim5 5s forwards ease-in 2;
+    transform: rotate(5deg);
+}
