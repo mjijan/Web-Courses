@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    :root {
+        --color1 : blue;
+        --color2 : orange;
+        --color3 : green;
+        --color4 : red;
+    }
+    body {
+        background-color: rgb(178, 212, 235);
+    }
+
+    .container {
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px solid black;
+        margin: auto;
+        padding-bottom: 0;
+    }
+    .row1 {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    .row1 .box {
+        background-color: var(--color1);
+        height: 100px;
+
+    }
+    .row2{
+        margin-bottom: 30px;
+    }
+    .row2 .box {
+        background-color: var(--color2);
+        height: 200px;
+    }
+
+    .row3 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    .row3 .box {
+        background-color: var(--color3);
+        height: 200px;
+    }
+    .row4 {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    .row4 .box {
+        background-color: var(--color4);
+        height: 150px;
+    }
+
+    @media only screen and (max-width: 900px) {
+        body {
+            background-color: rgb(234, 167, 219);
+        }
+        .container {
+           padding-bottom: 0;
+        }
+        .row1 {
+            grid-template-columns: auto ;
+            row-gap: 15px;
+            margin-bottom: 15px;
+        }
+        .row2{
+            margin-bottom: 15px;
+        }
+        .row3 {
+            grid-template-columns: auto;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .row4 {
+            grid-template-columns: auto auto;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        body {
+            background-color: rgb(246, 182, 171);
+        }
+        .row1 {
+            grid-template-columns: auto ;
+            row-gap: 15px;
+            margin-bottom: 15px;
+        }
+        .row2{
+            margin-bottom: 15px;
+        }
+        .row3 {
+            grid-template-columns: auto;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .row4 {
+            grid-template-columns: auto;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="row1">
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="row2">
+            <div class="box"></div>
+        </div>
+        <div class="row3">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="row4">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+
