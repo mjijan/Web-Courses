@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    :root {
+        --color1 : blue;
+        --color2 : orange;
+        --color3 : green;
+        --color4 : red;
+    }
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .container {
+        width: 1200px;
+        margin: auto;
+        background-color: rgba(128, 128, 128, 0.23);
+        min-height: 600px;
+    }
+    .head {
+        height: 300px;
+        background-color: rgb(142, 142, 142);
+        margin-bottom: 20px;
+    }
+    .head:hover {
+        background-color: red;
+        transition: all 0.5s;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 40px;
+        row-gap: 20px;
+    }
+    .card {
+       height: 500px;
+       position: relative;
+    }
+    .card .img {
+        height: 200px;
+        background-color: rgb(204, 204, 204);
+    }
+    .card .img:hover {
+        background-color: rgb(255, 136, 0);
+        transition: all 0.5s;
+    }
+    .card .text {
+        margin-top: 20px;
+    }
+    .more {
+        display: none;
+        width: 70px;
+        height: 35px;
+        text-decoration: underline;
+        padding: 2px;
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+    }
+    .more:hover {
+        cursor: pointer;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        .container {
+            width: 100%;
+        }
+    }
+    @media only screen and (max-width: 900px) {
+        body {
+            background-color: rgb(234, 167, 219);
+        }
+        .cards {
+            grid-template-columns: auto  auto;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        body {
+            background-color: rgb(246, 182, 171);
+        }
+        .cards {
+            grid-template-columns:  auto;
+        }
+        .card{
+            height: 350px;
+        }
+        .text{
+            height: 60px;
+            overflow: hidden;
+        }
+        .more {
+            display: block;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="head"></div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="img"></div>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet necessitatibus rem, obcaecati exercitationem natus esse voluptates. Fuga assumenda, pariatur labore reiciendis culpa debitis veniam non tempora voluptatum, accusamus repellat adipisci voluptates architecto iure. Porro placeat accusamus molestiae repellat dolorum quod eaque ipsam aperiam quasi velit sint commodi nulla, tempore provident iste? Impedit omnis doloribus debitis sunt at enim illum eaque amet eligendi qui expedita quis possimus eos sit reiciendis, eum fugit autem sapiente cumque culpa atque magni? Tempora reiciendis aspernatur aut in atque facilis accusamus quas consequuntur quidem, quod omnis non, nobis quam. Minus corrupti quas, mollitia alias porro eos!</div>
+                <div class="more">read more</div>
+            </div>
+       
+
+            <div class="card">
+                <div class="img"></div>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, non est dolore asperiores laboriosam itaque veritatis obcaecati, quasi dolor nesciunt, impedit saepe accusantium ad. Neque distinctio non dignissimos, magni sequi iure totam cumque autem itaque animi officia repellendus eaque rem ratione fugit! Officia, iusto! Pariatur deserunt, ea, veniam quo inventore minima temporibus sit amet obcaecati explicabo delectus aut ullam dicta assumenda excepturi non quisquam. Accusamus saepe ipsam assumenda ullam aliquam quaerat voluptatibus alias itaque quis deserunt corporis libero reprehenderit, earum distinctio fuga dignissimos dicta mollitia fugit odio animi soluta sequi! Eaque voluptate consequuntur, vel voluptatem minus error maxime totam optio.</div>
+                <div class="more">read more</div>
+            </div>
+
+  
+
+            <div class="card">
+                <div class="img"></div>
+                <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid quis dolore corrupti at molestiae necessitatibus quibusdam eius labore animi, aspernatur sequi assumenda consequatur nobis ipsum, dignissimos deserunt alias nam iusto, sunt vero facere quo impedit aliquam facilis. Temporibus, illum similique impedit explicabo, ex incidunt molestias nisi sed voluptates pariatur aliquid provident, libero atque modi quam ab nam molestiae exercitationem totam voluptatum magnam aspernatur debitis repellendus perferendis. Delectus labore a eligendi autem quam cumque eum eius amet expedita molestias? Sapiente soluta animi laudantium laboriosam totam suscipit voluptates deserunt adipisci dolores, molestiae sint corrupti eos quam officia quibusdam officiis voluptatum ea asperiores!</div>
+                <div class="more">read more</div>
+            </div>
+
+     
+        </div>
+       
+    </div>
+</body>
+</html>
+
+

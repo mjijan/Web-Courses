@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .container {
+            width: 800px;
+            margin: auto;
+            background-color: rgb(184, 184, 184);
+            padding: 20px;
+        }
+        section {
+            background-color: rgb(89, 89, 138);
+            height: 800px;
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 20px;
+            font-size: 50px;
+            color: white;
+        }
+        nav {
+            text-align: center;
+        }
+        .menu {
+            margin: 10px;
+            font-size: 30px;
+        }
+        .back_to_top {
+            position: fixed;
+            bottom: 20px;
+            right: 100px;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav id="nav1">
+            <a href="#s1"><span class="menu">s1</span></a>
+            <a href="#s2"><span class="menu">s2</span></a>
+            <a href="#s3"><span class="menu">s3</span></a>
+            <a href="#s4"><span class="menu">s4</span></a>
+            <a href="#s5"><span class="menu">s5</span></a>
+            <a href="#s6"><span class="menu">s6</span></a>
+        </nav>
+        <section id="s1">s1</section>
+        <section id="s2">s2</section>
+        <section id="s3">s3</section>
+        <section id="s4">s4</section>
+        <section id="s5">s5</section>
+        <section id="s6">s6</section>
+
+        <a href="#nav1"><div class="back_to_top">Top</div></a>
+    </div>
+</body>
+</html>
