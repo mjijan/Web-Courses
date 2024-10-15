@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/server_page">
+        <fieldset>
+          <legend>Personalia:</legend>
+          
+          <label>Age:</label>
+          <input type="number" min="0" max="100" value="90" />
+          <hr>
+
+          <label>Age:</label>
+          <input type="range" min="0" max="100" step="1" value="10" />
+          <hr>
+
+          <label>Photo:</label>
+          <input type="file"  />
+          <hr>
+
+          <label>search for student:</label>
+          <input type="search" required />
+          <hr>
+
+          <label>Tel:</label>
+          <input type="tel"  />
+          <hr>
+
+          <label>Notes:</label>
+          <textarea rows="5" cols="20"></textarea>
+          <hr>
+
+
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+</body>
+</html>
