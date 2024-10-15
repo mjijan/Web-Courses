@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript HTML Events</h1>
+<h2>The onclick Attribute</h2>
+
+<button onclick="f(this)">The time is?</button>
+<button onclick="f(this)">The time is?</button>
+
+<script>
+	function f(btn)
+    {
+    	btn.innerHTML = Date();
+    }
+</script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Select a new car from the list.</p>
+
+<select id="mySelect" onchange="myFunction()">
+  <option value="Audi">Audi</option>
+  <option value="BMW">BMW</option>
+  <option value="Mercedes">Mercedes</option>
+  <option value="Volvo">Volvo</option>
+</select>
+
+<p>When you select a new car, a function is triggered which outputs the value of the selected car.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("demo").innerHTML = "You selected: " + x;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The blur Event</h2>
+
+Enter your name: <input type="text" id="fname" onblur="myFunction()">
+
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+<script>
+function myFunction() {
+  let x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The focus Event</h2>
+
+Enter your name: <input type="text" onblur="reset_input(this)" onfocus="myFunction(this)">
+
+<p>When the input field gets focus, a function changes the background-color.</p>
+
+<script>
+function myFunction(x) {
+  x.style.background = "yellow";
+}
+function reset_input(x) {
+  x.style.background = "white";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  overflow: scroll;
+}
+</style>
+</head>
+<body>
+<h1>The onscroll Event</h1>
+<p>Try the scrollbar in div.</p>
+
+<div onscroll="myFunction()">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.
+<br><br>
+'Whenever you feel like criticizing anyone,' he told me, just remember that all the people in this world haven't had the advantages that you've had.'</div>
+
+<p>Scrolled <span id="demo">0</span> times.</p>
+
+<script>
+let x = 0;
+function myFunction() {
+  document.getElementById("demo").innerHTML = x += 1;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html> 
+<html> 
+<body> 
+<h1>HTML DOM Events</h1>
+<h2>The onprogress Event</h2>
+
+<video controls onprogress="myFunction()">
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+<p>Video courtesy of <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Downloading video.";
+}
+</script>
+
+</body> 
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The onended Event</h2>
+
+<p>Assign an "onended" event to an audio element.</p>
+
+<p>Press play and wait for the audio to end.</p>
+
+<audio controls onended="myFunction()">
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "The Audio has ended";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The onplay Event</h2>
+
+<p>Assign an "onplay" event to a video element.</p>
+
+<p>Press play.</p>
+
+<video controls onplay="myFunction()">
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+<p>Video courtesy of <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "The video has started to play";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The onplaying Event</h2>
+
+<p>Assign an "onplaying" event to a video element.</p>
+
+<video controls onplaying="myFunction()">
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<p>Play, pause and then play the video again.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML += "The video is playing. ";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body onresize="myFunction()">
+
+<p>Try to resize the browser window to display the windows height and width.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let w = window.outerWidth;
+  let h = window.outerHeight;
+  let txt = "Window size: width=" + w + ", height=" + h;
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Write something in the search field and press "ENTER".</p>
+
+<input type="search" id="myInput" onsearch="myFunction()">
+
+<p><strong>Note:</strong> The onsearch event is not supported in Internet Explorer, Firefox or Opera 12 and earlier versions.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+   var x = document.getElementById("myInput");
+   document.getElementById("demo").innerHTML = "You are searching for: " + x.value;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>When you submit the form, a function is triggered which alerts some text.</p>
+
+<form action="/action_page.php" onsubmit="myFunction()">
+  Enter name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+function myFunction() {
+  alert("The form was submitted");
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+Select some of the text: <input type="text" value="Hello world!" onselect="myFunction()">
+
+<script>
+function myFunction() {
+  alert("You selected some text!");
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Use select() to select the content of a Text Field</h2>
+
+Name: <input type="text" id="myText" value="Mickey">
+
+<p>Click the button to select the content of the text field.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  document.getElementById("myText").select();
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+<h1 style=color:green>
+	GeeksforGeeks
+</h1>
+
+<p>Select any part of this sentence
+	and press the button</p>
+
+<!--Button to invoke the
+		function to get the selected text-->
+<input type="button"
+	value="Get Selection"
+	onmousedown="getSelectedText()">
+
+<!--Form to show the selected text as output-->
+<form name="testform">
+	<textarea name="selectedtext"
+			rows="5"
+			cols="20">
+	</textarea>
+</form>
+<script>
+	// Function to get the Selected Text
+	function getSelectedText() {
+		var selectedText = '';
+
+		// window.getSelection
+		if (window.getSelection) {
+			selectedText = window.getSelection();
+		}
+		// document.getSelection
+		else if (document.getSelection) {
+			selectedText = document.getSelection();
+		}
+		// document.selection
+		else if (document.selection) {
+			selectedText =
+				document.selection.createRange().text;
+		} else return;
+		// To write the selected text into the textarea
+		document.testform.selectedtext.value = selectedText;
+	}
+</script>
+
+
+

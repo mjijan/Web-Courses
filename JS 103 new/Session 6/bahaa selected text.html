@@ -1,0 +1,42 @@
+<h1 style=color:green>
+	GeeksforGeeks
+</h1>
+
+<p>Select any part of this sentence
+	and press the button</p>
+
+<!--Button to invoke the
+		function to get the selected text-->
+<input type="button"
+	value="Get Selection"
+	onmousedown="getSelectedText()">
+
+<!--Form to show the selected text as output-->
+<form name="testform">
+	<textarea name="selectedtext"
+			rows="5"
+			cols="20">
+	</textarea>
+</form>
+<script>
+	// Function to get the Selected Text
+	function getSelectedText() {
+		var selectedText = '';
+
+		// window.getSelection
+		if (window.getSelection) {
+			selectedText = window.getSelection();
+		}
+		// document.getSelection
+		else if (document.getSelection) {
+			selectedText = document.getSelection();
+		}
+		// document.selection
+		else if (document.selection) {
+			selectedText =
+				document.selection.createRange().text;
+		} else return;
+		// To write the selected text into the textarea
+		document.testform.selectedtext.value = selectedText;
+	}
+</script>

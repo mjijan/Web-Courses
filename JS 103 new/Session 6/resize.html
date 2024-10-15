@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body onresize="myFunction()">
+
+<p>Try to resize the browser window to display the windows height and width.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let w = window.outerWidth;
+  let h = window.outerHeight;
+  let txt = "Window size: width=" + w + ", height=" + h;
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
