@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width : 800px;
+            height: 400px;
+            overflow: auto;
+            margin: auto;
+            background-color: rgb(241, 255, 220);
+            font-size: 30px;
+            font-weight: bold;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .box {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(183, 201, 249);
+            margin: 10px;
+            font-size: 14px;
+            display: inline-block;
+            text-align: center;
+        }
+        #btn {
+            background-color: green;
+            color: white;
+            display: block;
+            width: 800px;
+            margin: auto;
+            padding: 20px;
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .num {
+            background-color: rgb(21, 0, 128);
+            color: white;
+            display: block;
+            width: 800px;
+            margin: auto;
+            padding: 20px;
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn" onclick="toggle_timer()">Start Timer</button>
+    <div class="num" id="num">0</div>
+    <div class="container" id="container"></div>
+    <script>
+        var timer_id ;
+        var timer_state = false;
+        var js_num = 0;
+        function f()
+        {
+            js_num++;
+            var result = "<div class='box'>" + js_num + "</div>"
+            document.getElementById("container").innerHTML += result;
+            
+            document.getElementById("num").innerHTML = js_num;
+        }
+        
+        function toggle_timer()
+        {
+            if (timer_state == false)
+            {
+                timer_state = true;
+                timer_id = setInterval( f , 100);
+                document.getElementById("btn").innerHTML = "Stop Timer";
+                document.getElementById("btn").style.backgroundColor = "red";
+            }
+            else
+            {
+                timer_state = false;
+                clearInterval(timer_id);
+                document.getElementById("btn").innerHTML = "Start Timer";
+                document.getElementById("btn").style.backgroundColor = "green";
+            }
+            
+        }
+    </script>
+</body>
+</html>

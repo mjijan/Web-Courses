@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width : 800px;
+            height: 400px;
+            overflow: auto;
+            margin: auto;
+            background-color: rgb(241, 255, 220);
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .box {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(183, 201, 249);
+            margin: 10px;
+            font-size: 14px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container" id="container"></div>
+    <script>
+        setInterval( f , 100);
+        function f()
+        {
+            var result = "<div class='box'></div>"
+            document.getElementById("container").innerHTML += result;
+        }
+    </script>
+</body>
+</html>

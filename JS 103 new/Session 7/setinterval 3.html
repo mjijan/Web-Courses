@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width : 800px;
+            height: 400px;
+            overflow: auto;
+            margin: auto;
+            background-color: rgb(241, 255, 220);
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .box {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(183, 201, 249);
+            margin: 10px;
+            font-size: 14px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="start_timer()">start timer</button>
+    <button onclick="stop_timer()">stop timer</button>
+    <div class="container" id="container"></div>
+    <script>
+        var timer_id = setInterval( f , 100);
+        function f()
+        {
+            var result = "<div class='box'></div>"
+            document.getElementById("container").innerHTML += result;
+        }
+        function stop_timer()
+        {
+            clearInterval(timer_id);
+        }
+        function start_timer()
+        {
+            timer_id = setInterval( f , 100);
+        }
+    </script>
+</body>
+</html>
