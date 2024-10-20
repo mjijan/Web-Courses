@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(174, 131, 239), rgb(109, 89, 236));
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 840px;
+    height: 650px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: rgb(243, 255, 20);
+    display: flex;
+    box-shadow: 0px 0px 10px 0px black;
+    border-radius: 20px;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(2, 179, 210);
+    padding: 0 35px;
+    border-radius: 20px 0 0 20px;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 0 50px;
+    border-radius: 0 20px 20px 0;
+}
+
+.left .title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    margin-top: 100px;
+}
+
+.text {
+    font-size: 18px;
+    color: rgb(137, 254, 255);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.right .title {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-top: 45px;
+}
+
+.required {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(85, 85, 85);
+    margin-top: 25px;
+}
+
+.inp1 {
+    margin-top: 10px;
+    background: rgb(237, 237, 237);
+    width: 100%;
+    padding: 13px;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.toto {
+    width: 100%;
+    height: 150px;
+    border: none;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 13px;
+    background: rgb(237, 237, 237);
+}
+
+.btn1 {
+    background-color: rgb(2, 179, 210);
+    width: 150px;
+    padding: 18px;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin: auto;
+    margin-top: 13.5px;
+    display: block;
+}
