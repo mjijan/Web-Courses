@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-image: linear-gradient(to bottom right , rgb(157,196,251) , rgb(210,195,252) );
+}
+html {
+    height: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 710px;
+    height: 620px;
+    background-color: rgb(206, 206, 206);
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    display: flex;
+}
+.left {
+    width: 50%;
+    height: 100%;
+    background-image: url('imgs/bg.jpg');
+    border-radius: 20px 0 0 20px;
+    background-repeat: no-repeat;
+    /* background-size: 200px 300px;
+    background-position: 50px 100px; */
+    background-size: cover;
+    font-weight: bold;
+    color: white;
+    padding: 26px;
+}
+.right {
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+    padding: 26px;
+}
+.text1{
+    font-size: 26px;
+    margin-top: 410px;
+}
+.text2{
+    font-size: 20px;
+    margin-top: 12px;
+}
+.text3{
+    font-size: 28px;
+    display: inline-block;
+    margin-top: 65px;
+    margin-left: 155px;
+}
+.text4{
+    font-size: 17px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.title {
+    font-size: 25px;
+    color : black;
+    margin-top: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.lbl1 {
+    display: block;
+    font-size: 15px;
+    color: rgb(120, 120, 120);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.inp1 {
+    width: 100%;
+    padding: 11px;
+    font-size: 14px;
+    border: 1px solid rgb(220, 220, 220);
+    margin-bottom: 25px;
+    outline: none;
+    border-radius: 4px;
+}
+.inp1::placeholder {
+    color: rgb(194, 194, 194);
+}
+.inp1:focus {
+    outline: 1px solid rgb(168, 168, 168);
+}
+/* .container:hover {
+    box-shadow: 0 0 5px 0px rgba(8, 0, 90, 0.749);
+} */
+.left:hover {
+    box-shadow: 0 0 15px 5px rgb(255, 255, 255);
+}
+.right:hover {
+    box-shadow: 0 0 15px 0px rgba(65, 0, 90, 0.61);
+}
+.lbl2 {
+    display: inline-block;
+    font-size: 13px;
+    color: rgb(120, 120, 120);
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.link1 {
+    display: block;
+    font-size: 14px;
+    margin-left: 29px;
+    text-decoration: underline;
+    color: rgb(71, 86, 141);
+    font-weight: bold
+}
+.btn {
+    width: 130px;
+    padding: 12px;
+    background-color:  rgb(60, 99, 204);
+    font-weight: bold;
+    color: white;
+    border: none;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+.chk1{
+    accent-color: gray;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color:  rgb(45, 75, 159);
+}
