@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom right, rgb(114, 182, 224), rgb(154, 89, 181));
+}
+
+html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 700px;
+    height: 580px;
+    background-color: white;
+    margin: auto;
+    margin-top: 150px;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 0px 10px 0 rgb(71, 71, 71);
+    border: 2px solid rgb(255, 255, 255);
+    position: relative;
+}
+
+.container:hover {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sections {
+    display: flex;
+    width: 100%;
+    height: 270px;
+    justify-content: space-between;
+}
+
+.left {
+    width: 48%;
+    /* background-color: rgba(255, 255, 0, 0.458); */
+    height: 100%;
+    padding: 5px;
+    vertical-align: top;
+}
+
+.right {
+    width: 48%;
+    height: 100%;
+    padding: 5px;
+    /* background-color: rgba(0, 255, 42, 0.458); */
+    vertical-align: top;
+}
+
+.lbl1 {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.inp1 {
+    width: 100%;
+    font-size: 17px;
+    padding: 10px;
+    border: 1px solid rgb(188, 188, 188);
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.inp1:focus {
+    outline: 1px solid rgb(136, 136, 136);
+    background: rgb(243, 243, 243);
+}
+
+.inp1::placeholder {
+    font-weight: bold;
+    color: rgb(163, 163, 163);
+}
+
+.gender {
+    display: block;
+    font-size: 23px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 8px;
+}
+
+.lbl2 {
+    margin-right: 100px;
+}
+
+.btn1 {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    background-image: linear-gradient(to bottom right, rgb(114, 182, 224), rgb(154, 89, 181));
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 25px;
+    border-radius: 6px;
+}
+
+.line {
+    width: 30px;
+    height: 4px;
+    background-image: linear-gradient(to bottom right, rgb(114, 182, 224), rgb(154, 89, 181));
+    position: absolute;
+    top: 63px;
+    left: 32px;
+    border-radius: 3px;
+}
