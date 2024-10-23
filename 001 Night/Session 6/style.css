@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    background-color: rgb(201, 201, 201);
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    background-color: rgb(187, 197, 255);
+    width: 800px;
+    padding: 30px;
+    min-height: 600px;
+    margin: auto;
+    margin-top: 150px;
+    position: relative;
+}
+.d {
+    background-color: rgb(0, 0, 99);
+    width: 750px;
+    height: 750px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.x {
+    background-color: rgb(158, 0, 0);
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top : 0px;
+    left: 0px;
+}
+.chat {
+    background-color: rgb(0, 105, 14);
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    bottom : 0px;
+    right:  0px;
+}
