@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+:root {
+    --ourTime : 1.5s;
+}
+.container {
+    width: 520px;
+    height: 500px;
+    padding: 20px;
+    /* background-image: linear-gradient(to bottom ,rgb(0, 0, 135),rgb(0, 0, 69),rgb(0, 0, 0)); */
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    border-radius: 30px;
+    background-color: rgb(173, 0, 0);
+    animation: container-anim 2s 4 reverse ;
+}
+.d {
+    position: absolute;
+    top : 50px;
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.d1 {
+    left : 150px;
+    animation: anim var(--ourTime) forwards;
+}
+.d2 {
+    left : 180px;
+    animation: anim var(--ourTime) forwards 1s;
+}
+.d3 {
+    left : 210px;
+    animation: anim var(--ourTime) forwards 2s;
+}
+.d4 {
+    left : 260px;
+    animation: anim var(--ourTime) forwards 3s;
+}
+.d5 {
+    left : 290px;
+    animation: anim var(--ourTime) forwards 4s;
+}
+.d6 {
+    left : 320px;
+    animation: anim var(--ourTime) forwards 5s;
+}
+.d7 {
+    left : 350px;
+    animation: anim var(--ourTime) forwards 6s;
+}
+.d8 {
+    left : 380px;
+    animation: anim var(--ourTime) forwards 7s;
+}
+
+@keyframes anim {
+    0%{top : 50px; color: white;font-size: 32px;}
+    50%{top : 400px; color: rgb(235, 252, 0);font-size: 50px;}
+    100%{top : 50px;color: white;font-size: 32px;}
+}
+
+
+
+@keyframes container-anim {
+    0% {background-color: rgb(201, 0, 0);}
+    50% {background-color: rgb(3, 0, 201);}
+    100% {background-color: rgb(201, 0, 0);}
+}
+
+
+
+
