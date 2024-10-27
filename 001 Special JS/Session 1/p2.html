@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .div1{
+            background-color: rgb(255, 255, 214);
+            padding: 20px;
+            font-size: 30px;
+            width: 600px;
+            height: 70px;
+            text-align: center;
+        }
+        button {
+            padding: 10px;
+            font-size: 25px;
+            width: 600px;
+            height: 70px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button>show text</button>
+    <div class="div1" id="d1"></div>
+
+    <script>
+        var result = "Hello My Students again.";
+        document.getElementById("d1").innerHTML = result;
+    </script>
+</body>
+</html>
+

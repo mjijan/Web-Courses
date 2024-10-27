@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #d1{
+            background-color: rgb(255, 216, 214);
+            padding: 20px;
+            font-size: 30px;
+            width: 600px;
+            height: 70px;
+            text-align: center;
+        }
+        #d2{
+            background-color: rgb(218, 255, 214);
+            padding: 20px;
+            font-size: 30px;
+            width: 600px;
+            height: 70px;
+            text-align: center;
+        }
+        #d3{
+            background-color: rgb(214, 231, 255);
+            padding: 20px;
+            font-size: 30px;
+            width: 600px;
+            height: 70px;
+            text-align: center;
+        }
+        button {
+            padding: 10px;
+            font-size: 25px;
+            width: 200px;
+            height: 70px;
+            margin-bottom: 20px;
+        }
+        .btn1 {
+            width: 600px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="f1()">X</button>
+    <button onclick="f2()">Y</button>
+    <button onclick="f3()">Z</button>
+    <br><br>
+    <button onclick="c1()">Color 1</button>
+    <button onclick="c2()">Color 2</button>
+    <button onclick="c3()">Color 3</button>
+
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+
+    <button class="btn1" onclick="reset_all()">Reset All</button>
+
+    <script>
+        function c1()
+        {
+            document.getElementById("d1").style.color = "Red";
+        }
+        function c2()
+        {
+            document.getElementById("d2").style.color = "green";
+        }
+        function c3()
+        {
+            document.getElementById("d3").style.color = "blue";
+        }
+        function f1()
+        {
+            document.getElementById("d1").innerHTML = "X Value";
+        }
+        function f2()
+        {
+            document.getElementById("d2").innerHTML = "Y Value";
+        }
+        function f3()
+        {
+            document.getElementById("d3").innerHTML = "Z Value";
+        }
+        function reset_all()
+        {
+            document.getElementById("d1").innerHTML = "";
+            document.getElementById("d2").innerHTML = "";
+            document.getElementById("d3").innerHTML = "";
+
+            document.getElementById("d1").style.color = "black";
+            document.getElementById("d2").style.color = "black";
+            document.getElementById("d3").style.color = "black";
+        }
+    </script>
+</body>
+</html>
+
