@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+:root {
+    --color1 : rgb(109, 109, 109);
+    --color2 : rgb(235, 102, 1);
+    --color3 : rgb(66, 173, 222);
+    --color4 : rgb(208, 139, 2);
+    --color5 : rgb(8, 168, 110);
+    --color6 : rgb(83, 126, 184);
+    --animation-time : 0.4s;
+}
+.bg1 {
+    background-color: var(--color1);
+}
+.bg2 {
+    background-color: var(--color2);
+}
+.bg3 {
+    background-color: var(--color3);
+}
+.bg4 {
+    background-color: var(--color4);
+}
+.bg5 {
+    background-color: var(--color5);
+}
+.bg6 {
+    background-color: var(--color6);
+}
+.container {
+    width: 890px;
+    height: 475px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgb(208, 208, 208);
+    display: flex;
+    overflow: hidden;
+}
+
+.box {
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px 10px 0 0;
+    padding-top: 10px;
+    width: 140px;
+    height: 385px;
+    margin-right: 2px;
+    position: relative;
+}
+.attrib-title {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 18px 20px;
+    height: 95px;
+    margin-bottom: 50px;
+    width: 142px;
+    margin-left: -1px;
+    border-radius: 2px;
+}
+.title {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 18px 20px;
+    height: 95px;
+    margin-bottom: 50px;
+    width: 142px;
+    margin-left: -1px;
+    border-radius: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.attrib {
+    color: rgb(195, 195, 195);
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+    padding: 2px 15px;
+    border-bottom: 1px solid white;
+    height: 20px;
+}
+.valuee {
+    color: rgb(195, 195, 195);
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px 15px;
+    border-bottom: 1px solid white;
+    height: 20px;
+}
+.padge {
+    height: 30px;
+    width: 142px;
+    margin-left: -1px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 7px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 100px;
+    transition: all 0.5s ;
+    overflow: hidden;
+}
+
+.some {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+.attrib-padge {
+    height: 30px;
+    width: 142px;
+    margin-left: -1px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 7px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 2px solid white;
+    text-align: center;
+    font-size: 26px;
+    padding-top: 18px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 68px;
+    left: 35px;
+    visibility: hidden;
+}
+
+@keyframes anim1 {
+    0%{
+        width: 0;
+        height: 0;
+        font-size: 0;
+        padding-top: 0;
+        left: 70px;
+        top: 95px;
+        visibility:visible
+    }
+    100%{
+        width: 70px;
+        height: 70px;
+        font-size: 26px;
+        padding-top: 18px;
+        top: 68px;
+        left: 35px;
+        visibility: visible;
+    }
+}
+
+.circle2 {
+    animation: anim1 var(--animation-time) forwards;
+}
+
+.circle3 {
+    animation: anim1 var(--animation-time) forwards 0.5s;
+}
+
+.circle4 {
+    animation: anim1 var(--animation-time) forwards 1s;
+}
+
+.circle5 {
+    animation: anim1 var(--animation-time) forwards 1.5s;
+}
+
+.circle6 {
+    animation: anim1 var(--animation-time) forwards 2s;
+}
+
+@keyframes padge-animation {
+    0%{
+        margin-top: 100px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+.padge2{
+    animation: padge-animation var(--animation-time) forwards;
+}
+.padge3{
+    animation: padge-animation var(--animation-time) forwards 0.5s;
+}
+.padge4{
+    animation: padge-animation var(--animation-time) forwards 1s;
+}
+.padge5{
+    animation: padge-animation var(--animation-time) forwards 1.5s;
+}
+.padge6{
+    animation: padge-animation var(--animation-time) forwards 2s;
+}
+
+.circle:hover {
+    box-shadow:  0 0 7px 0 rgba(0, 0, 0, 0.436);
+}
+/* for signup */
+.padge:hover {
+    height: 60px;
+    cursor: pointer;
+}
