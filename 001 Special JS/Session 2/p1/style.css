@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 400px;
+    padding: 30px;
+    border: 10px ridge rgb(212, 173, 0);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+}
+.inp {
+    width: 90%;
+    margin-left: 5%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn1 {
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgb(72, 72, 72);
+    padding: 10px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.result {
+    width: 90%;
+    margin-left: 5%;
+    background-color: rgb(246, 255, 201);
+    padding: 10px;
+    color: rgb(49, 49, 49);
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    text-align: center;
+}
