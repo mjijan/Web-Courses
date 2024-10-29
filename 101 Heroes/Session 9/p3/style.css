@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 520px;
+    height: 500px;
+    padding: 25px;
+    background-color: rgb(116, 0, 15);
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+}
+
+.d {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+}
+
+.d1 {
+    left: 150px;
+    animation: anim1 1s;
+}
+
+.d2 {
+    left: 190px;
+    animation: anim1 1s 1s;
+}
+
+.d3 {
+    left: 230px;
+    animation: anim1 1s 2s;
+}
+
+.d4 {
+    left: 270px;
+    animation: anim1 1s 3s;
+}
+
+.d5 {
+    left: 310px;
+    animation: anim1 1s 4s;
+}
+
+.d6 {
+    left: 350px;
+    animation: anim1 1s 5s;
+}
+
+@keyframes anim1 {
+    0% {
+        top: 50px;
+        color: white;
+        font-size: 40px;
+    }
+
+    50% {
+        top: 350px;
+        color: yellow;
+        font-size: 120px;
+    }
+
+    100% {
+        top: 50px;
+        color: white;
+        font-size: 40px;
+    }
+}

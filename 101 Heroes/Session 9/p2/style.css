@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    padding: 25px;
+    background-color: rgb(116, 0, 15);
+    margin: auto;
+    margin-top: 100px;
+}
+
+.text {
+    font-size: 18px;
+    font-weight: bold;
+    animation-name: anim1;
+    animation-duration: 4s;
+    color: white;
+}
+
+@keyframes anim1 {
+    0% {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    50% {
+        margin-left: 300px;
+        color: yellow;
+        font-size: 30px;
+    }
+
+    100% {
+        margin-left: 600px;
+        color: white;
+        font-size: 18px;
+    }
+}
