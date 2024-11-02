@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Freehand&display=swap" rel="stylesheet">
+
+<style>
+  .amiri-regular {
+    font-family: "Amiri", serif;
+    font-weight:700;
+    font-style: normal;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+
+p {
+  margin: 30px;
+  border: 1px solid black;
+  outline: 1px solid red;
+  outline-offset: 15px;
+  animation: anim1 1s 4 forwards alternate-reverse;
+}
+@keyframes anim1 {
+  from {
+    outline-offset: 15px;
+  }
+  to {
+    outline-offset: 0px;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2 class="amiri-regular">مرحبا بكم في معهدنا</h2>
+
+<p>This paragraph has an outline 15px outside the border edge.</p>
+
+</body>
+</html>
