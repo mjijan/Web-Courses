@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+:root {
+    --color1 : rgb(154, 154, 154);
+    --color2 : rgb(238, 148, 6);
+    --color3 : rgb(47, 47, 47);
+}
+.container {
+    width: 330px;
+    height: 525px;
+    padding: 18px;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: black;
+    user-select: none;
+}
+.b {
+    width : 60px;
+    height: 60px;
+    border-radius: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 17px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    vertical-align: top;
+}
+.b:hover {
+    cursor: pointer;
+    box-shadow: 0 0 1px 1px white;
+}
+.arrow {
+    padding-top: 4px !important;
+    font-size: 35px !important;
+}
+.title {
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.screen {
+    text-align: right;
+    margin-right: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 15px;
+    height: 50px;
+    overflow-x: auto;
+}
+
+.b1 {
+    background-color: var(--color1);
+    color: black;
+}
+.b2 {
+    background-color: var(--color2);
+    color: rgb(255, 255, 255);
+}
+.b3 {
+    background-color: var(--color3);
+    color: rgb(255, 255, 255);
+}
+/* width */
+::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(76, 76, 76); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(144, 144, 144); 
+    border-radius: 10px;
+  }
