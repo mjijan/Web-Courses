@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+:root {
+  --edge: 2em;
+}
+
+.cube {
+  font-size: 4em;
+  width: 2em;
+  height: 2em;
+  margin: 1.5em auto;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg);
+  animation: rotating 10s infinite linear;
+  
+}
+@keyframes rotating {
+	from {
+		transform: rotateX(-30deg) rotateY(0deg);
+	}
+	to {
+		transform: rotateX(-30deg) rotateY(360deg);
+	}
+}
+
+.face {
+  position: absolute;
+  width: 4em;
+  height: 4em;
+  border: 1px solid black;
+  opacity: 0.9;
+  text-align : center;
+  line-height : 120px;
+}
+
+.front {transform: translateZ(var(--edge)); background: red;}
+.top {transform: rotateX(90deg) translateZ(var(--edge)); background: pink;}
+.right {transform: rotateY(90deg) translateZ(var(--edge)); background: green;}
+.left {transform: rotateY(-90deg) translateZ(var(--edge)); background: yellow;}
+.bottom {transform: rotateX(-90deg) translateZ(var(--edge)); background: blue;}
+.back {transform: rotateY(-180deg) translateZ(var(--edge)); background: orange;}
+
+.i1 {
+	width : 100%;
+	height : 100%;
+}
+</style>
+</head>
+<body>
+
+  <div class="cube">
+	  <div class="face front"></div>
+	  <div class="face back"></div>
+	  <div class="face right"></div>
+	  <div class="face left"></div>
+	  <div class="face top"></div>
+	  <div class="face bottom"></div>
+  </div>
+
+</body>
+</html>
