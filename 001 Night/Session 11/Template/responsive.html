@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+*{
+  box-sizing: border-box;
+}
+:root {
+  --color1 : rgb(83, 125, 199);
+  --color2 : rgb(231, 165, 52);
+  --color3 : rgb(70, 149, 103);
+  --color4 : rgb(194, 81, 81);
+}
+.container {
+  width: 1200px;
+  margin: auto;
+  padding: 20px;
+  border: 3px solid rgba(128, 128, 128, 0.649);
+  transition: all 0.2s;
+}
+
+.row1{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+.row1 .box {
+  background-color: var(--color1);
+  height: 75px;
+}
+
+.row2{
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.row2 .box {
+  background-color: var(--color2);
+  height: 175px;
+}
+
+.row3{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.row3 .box {
+  background-color: var(--color3);
+  height: 200px;
+  
+}
+
+.row4{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.row4 .box {
+  background-color: var(--color4);
+  height: 200px;
+  
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    background-color: rgb(255, 253, 227);
+  }
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background-color: rgb(161, 250, 173);
+  }
+  .container {
+    width: 100%;
+  }
+  .row1{
+    grid-template-columns: auto;
+  }
+
+  .row1 .box {
+    height: 50px;
+  }
+
+  .row3{
+    grid-template-columns: auto ;
+  }
+
+  .row3 .box {
+    height: 75px;
+  }
+
+  .row4{
+    grid-template-columns: auto auto;
+  }
+
+  .row4 .box {
+    height: 100px;
+    
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-color: rgb(228, 240, 251);
+  }
+  
+  .row4{
+    grid-template-columns: auto ;
+  }
+}
+
+
+</style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="row1">
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="row2">
+      <div class="box"></div>
+    </div>
+
+    <div class="row3">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="row4">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+  </div>
+</body>
+</html>
