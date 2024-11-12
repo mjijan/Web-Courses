@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    transition: all 0.25s;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+    border: 2px solid rgb(183, 0, 149);
+}
+
+.section-6 {
+    background-image: linear-gradient(to bottom right, rgb(183, 114, 255), rgb(250, 139, 171));
+    color: white;
+    padding: 20px;
+    padding-bottom: 200px;
+}
+
+.title,
+.text {
+    text-align: center
+}
+
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 7px;
+}
+
+.text {
+    font-size: 14px;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.card {
+    border-radius: 13px;
+    background-color: white;
+    padding: 15px;
+    color: black;
+}
+
+.stu {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px solid rgb(168, 105, 248);
+    margin-right: 10px;
+}
+
+.info-text {
+    width: 100%;
+    display: inline-block;
+    margin-top: 5px;
+    vertical-align: top;
+}
+
+.desc {
+    font-size: 12px;
+    color: rgb(127, 127, 127);
+    margin-top: 15px;
+}
+
+.info1 {
+    font-size: 14px;
+    color: rgb(168, 105, 248);
+    font-weight: bold;
+}
+
+.info2 {
+    font-size: 10px;
+    color: rgb(133, 133, 133);
+}
+
+.info3 {
+    font-size: 14px;
+    color: rgb(250, 220, 110);
+    margin-top: -3px;
+}
+
+.flexo {
+    display: flex;
+}
+
+
+.section-7 {
+    background-color: white;
+    height: 300px;
+    border-radius: 80px 0 80px 0;
+    margin-top: -100px;
+    z-index: 100;
+    position: relative;
+}
+
+.section-8 {
+    background-image: linear-gradient(to bottom right, rgb(250, 139, 171), rgb(183, 114, 255));
+    height: 350px;
+    margin-top: -70px;
+    z-index: 10;
+    position: relative;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+
+    .info1 {
+        font-size: 1.5vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .cards {
+        grid-template-columns: auto;
+    }
+
+    .info1 {
+        font-size: 12px;
+    }
+
+    .text {
+        width: 80%;
+    }
+
+    .section-7 {
+        height: 200px ;
+    }
+
+    /* .section-6 {
+        padding-bottom: 30px;
+        padding-top: 2px;
+    } */
+}
