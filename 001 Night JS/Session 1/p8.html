@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1 {
+            background-color: rgb(181, 216, 227);
+            padding: 20px;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            width: 800px;
+            height: 500px;
+            margin: auto;
+            margin-top: 100px;
+            border: 5px ridge rgb(19, 107, 162);
+            border-radius: 30px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+    <script>
+        var mynum = 5;
+
+        for ( var i = 1 ; i<=200 ; i++ )
+        {
+            document.getElementById("d1").innerHTML += "Hello <br>";
+        }
+    </script>
+</body>
+</html>
