@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1 {
+            font-family: sans-serif;
+            width: 800px;
+            height: 700px;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+            background-color: rgb(185, 185, 185);
+            border: 7px ridge rgb(91, 91, 91);
+            border-radius: 10px;
+        }
+
+        .hehe {
+            background-color: rgb(152, 7, 7);
+            color: white;
+            margin-bottom: 10px;
+            width: 200px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="d1"></div>
+
+    <script>
+        var my_number = 5;
+
+        for (var i = 1; i <= 10; i++) {
+            var n = i * my_number;
+            document.getElementById("d1").innerHTML += `<div class="hehe">${i} * ${my_number} = ${n}</div>`;
+        }
+
+
+    </script>
+
+</body>
+
+</html>

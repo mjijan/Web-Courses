@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1 {
+            font-family: sans-serif;
+            width: 800px;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+            background-color: rgb(185, 185, 185);
+            border: 7px ridge rgb(91, 91, 91);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="d1"></div>
+
+    <script>
+        var day_number = 5;
+
+        if (day_number == 1)
+            document.getElementById("d1").innerHTML = `Today is Sat`;
+        else if (day_number == 2)
+            document.getElementById("d1").innerHTML = `Today is Sun`;
+        else if (day_number == 3)
+            document.getElementById("d1").innerHTML = `Today is Mon`;
+        else if (day_number == 4)
+            document.getElementById("d1").innerHTML = `Today is Tus`;
+        else if (day_number == 5)
+            document.getElementById("d1").innerHTML = `Today is Wed`;
+        else if (day_number == 6)
+            document.getElementById("d1").innerHTML = `Today is Thu`;
+        else if (day_number == 7)
+            document.getElementById("d1").innerHTML = `Today is Fri`;
+        else
+            document.getElementById("d1").innerHTML = `Something happened.`;
+    </script>
+
+</body>
+
+</html>
