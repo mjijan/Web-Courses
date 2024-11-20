@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+.btn1 {
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 300px;
+    margin-bottom: 10px;
+    height: 90px;
+}
+#d1 {
+    background-color: rgb(37, 0, 123);
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 910px;
+    height: 90px;
+    margin-bottom: 10px;
+}

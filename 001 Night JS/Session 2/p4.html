@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .btn1 {
+            padding: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            width: 300px;
+            margin-bottom: 10px;
+            height: 90px;
+        }
+        #d1 {
+            background-color: rgb(37, 0, 123);
+            color: white;
+            padding: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            width: 300px;
+            height: 90px;
+            margin-bottom: 10px;
+        }
+        #stars {
+            background-color: rgb(150, 0, 0);
+            color: white;
+            padding: 20px;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: left;
+            width: 300px;
+            min-height: 90px;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn1" onclick="f1()">click me</button>
+    <div id="d1" >0</div>
+    <div id="stars"></div>
+    <script>
+        var num = 1;
+        var star = "★ ";
+        var count = 1;
+        function f1()
+        {
+            document.getElementById("d1").innerHTML = num ;
+            if (count == 10)
+            {
+                document.getElementById("stars").innerHTML += star;
+                count = 1;
+            }
+            else
+                count++; // count = count + 1
+
+            num++;
+        }
+    </script>
+</body>
+</html>

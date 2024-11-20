@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .c1 {
+            background-color: rgb(208, 189, 253);
+            padding: 20px;
+            font-size: 40px;
+            text-align: center;
+            width: 500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="c1" id="d1" onclick="f1()">Some text</div>
+    <script>
+        function f1()
+        {
+            document.getElementById("d1").innerHTML = "new data";
+        }
+    </script>
+</body>
+</html>

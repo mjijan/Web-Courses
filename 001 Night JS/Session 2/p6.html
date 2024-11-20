@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .btn1 {
+            padding: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            width: 300px;
+            margin-bottom: 10px;
+            height: 90px;
+        }
+        #d1 {
+            background-color: rgb(37, 0, 123);
+            color: white;
+            padding: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            width: 910px;
+            height: 90px;
+            margin-bottom: 10px;
+        }
+       
+    </style>
+</head>
+<body>
+    <button class="btn1" onclick="f1()">click 1</button>
+    <button class="btn1" onclick="f2()">click 2</button>
+    <button class="btn1" onclick="f3()">click 3</button>
+    <div id="d1" >some text</div>
+    <script>
+        
+        function f1()
+        {
+            var data = 1;
+            document.getElementById("d1").innerHTML = data;
+            document.getElementById("d1").style.backgroundColor = "red";
+        }
+
+        function f2()
+        {
+            var data = 2;
+            document.getElementById("d1").innerHTML = data;
+            document.getElementById("d1").style.backgroundColor = "green";
+
+        }
+
+        function f3()
+        {
+            var data = 3;
+            document.getElementById("d1").innerHTML = data;
+            document.getElementById("d1").style.backgroundColor = "gray";
+
+        }
+    </script>
+</body>
+</html>
