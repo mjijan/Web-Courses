@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+#container {
+    width: 425px;
+    min-height: 425px;
+    padding: 40px;
+    background-color: rgb(192, 192, 192);
+    border: 8px ridge rgb(99, 99, 99);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    user-select: none;
+    position: relative;
+}
+.student {
+    background-color: rgb(145, 14, 12);
+    color: white;
+    font: 22px bold;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}

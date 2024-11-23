@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 425px;
+    height: 425px;
+    padding: 40px;
+    background-color: rgb(192, 192, 192);
+    border: 8px ridge rgb(99, 99, 99);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    padding-right: 0;
+    user-select: none;
+    position: relative;
+}
+
+#draw {
+    width: 425px;
+    padding: 15px;
+    background-color: rgb(192, 192, 192);
+    border: 8px ridge rgb(99, 99, 99);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    user-select: none;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+.d {
+    width : 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    background-color: rgb(173, 8, 8);
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    vertical-align: top;
+}
+.d:hover {
+    background-color: rgb(154, 12, 12);
+    cursor: pointer;
+}
+.line {
+    width: 325px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    display: none;
+}
+.soso {
+    font-size: 14px;
+}
+#line1 {
+    top: 90px;
+    left: 40px;
+}
+#line7 {
+    top :200px;
+    left : 50px;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+}
