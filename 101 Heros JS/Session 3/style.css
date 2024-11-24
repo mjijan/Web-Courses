@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 505px;
+    height: 495px;
+    padding: 35px;
+    padding-right: 0;
+    background-color: rgb(92, 92, 92);
+    border: 10px ridge rgb(221, 188, 0);
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 50px;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.s {
+    width: 125px;
+    height: 125px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(69, 69, 69);
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    vertical-align: top;
+}
+
+.s:hover {
+    background-color: rgb(255, 254, 225);
+    cursor: pointer;
+}
+
+#congratulations {
+    position: absolute;
+    width: 800px;
+    padding: 20px;
+    left: -150px;
+    top: -400px;
+    font-size: 40px;
+    background-color: rgb(241, 217, 3);
+    color: rgb(76, 76, 76);
+    font-weight: bold;
+    text-align: center;
+    border-radius: 15px;
+    border: 8px double rgb(76, 76, 76);
+    /* display: none; */
+    overflow: hidden;
+}
+
+.anim1 {
+    animation: my_anim 2s forwards;
+}
+
+@keyframes my_anim {
+    0% {
+        top: 0px;
+        height: 0;
+        padding: 0;
+    }
+
+    100% {
+        top: 187px;
+        padding: 20px;
+        height: 100px;
+    }
+}
