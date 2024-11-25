@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+:root {
+    --color1 : rgb(38, 38, 38);
+    --color2 : rgb(72, 72, 72);
+    --color3 : rgb(249, 104, 7);
+}
+#container {
+    height: 510px;
+    width: 250px;
+    padding: 15px;
+    padding-right: 0;
+    background-color: var(--color1);
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 50px;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    padding-top: 130px;
+}
+
+#memory {
+    height: 20px;
+    color: rgb(142, 142, 142);
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+#screen {
+    height: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    display: inline-block;
+    color: white;
+}
+.btn1{
+    background-color: var(--color2);
+    box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.514);
+}
+.btn2{
+    background-color: var(--color3);
+}
+.btn3{
+    background-color: var(--color1);
+    box-shadow: 0 0 3px 1px rgb(0, 0, 0);
+}
+.btn0 {
+    width: 102px;
+    height: 45px;
+}
+.btn:hover {
+    color: yellow;
+}
