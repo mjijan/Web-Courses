@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    #d1 {
+      background-color: rgb(0, 87, 163);
+      color: white;
+      text-align: center;
+      width: 800px;
+      padding: 20px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .small_color {
+      display: inline-block;
+      width: 100px;
+      height: 40px;
+      margin-right: 20px;
+      border: 4px solid black;
+      vertical-align: top;
+      text-align: center;
+      padding-top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  Width: <input value="800" id="rego" type="range" min="0" max="1000" oninput="f1()">
+  Font: <input value="20" id="fefo" type="range" min="5" max="50" oninput="f2()">
+  Color: <input id="celo" type="color" oninput="f3()">
+  <hr>
+  Red: <input id="red" type="range" min="0" max="255" oninput="f4()">
+  Green: <input id="green" type="range" min="0" max="255" oninput="f4()">
+  Blue: <input id="blue" type="range" min="0" max="255" oninput="f4()">
+  <hr>
+  <div class="small_color" id="small1"></div>
+  <div class="small_color" id="small2"></div>
+  <div class="small_color" id="small3"></div>
+  <hr>
+  <button onclick="start_timer()">Stop</button>
+  <button onclick="stop_timer()">Stop</button>
+  <hr>
+
+  <div id="d1">Hello Hero Course Students</div>
+
+  <script>
+    var timer_name = setInterval(set_hello, 200);
+    var num = 1;
+
+    function f1() {
+      var val1 = document.getElementById("rego").value;
+      document.getElementById("d1").style.width = val1 + "px";
+    }
+    function f2() {
+      var val1 = document.getElementById("fefo").value;
+      document.getElementById("d1").style.fontSize = val1 + "px";
+    }
+    function f3() {
+      var val1 = document.getElementById("celo").value;
+      document.getElementById("d1").style.backgroundColor = val1;
+    }
+    function f4() {
+      var v1 = document.getElementById("red").value;
+      var v2 = document.getElementById("green").value;
+      var v3 = document.getElementById("blue").value;
+      document.getElementById("d1").style.backgroundColor = `rgb(${v1},${v2},${v3})`;
+
+      document.getElementById("small1").innerHTML = v1;
+      document.getElementById("small2").innerHTML = v2;
+      document.getElementById("small3").innerHTML = v3;
+    }
+    function set_hello() {
+      document.getElementById("d1").innerHTML += " " + num + " ";
+      num++
+    }
+    function start_timer() {
+      timer_name = setInterval(set_hello, 200);
+    }
+    function stop_timer() {
+      clearInterval(timer_name);
+    }
+  </script>
+</body>
+
+</html>
