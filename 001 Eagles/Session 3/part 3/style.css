@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(108, 108, 108);
+    font-size: 40px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+div {
+    width: 500px;
+
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+.a {
+    color: red;
+    background-color: rgb(255, 198, 198);
+}
+
+.b {
+    color: green;
+    background-color: rgb(189, 255, 220);
+}
+
+.c {
+    color: blue;
+    background-color: rgb(225, 229, 255);
+}
