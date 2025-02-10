@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(68, 195, 228);
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.main {
+    background-color: white;
+    width: 800px;
+    /* height: 600px; */
+    margin: auto;
+    margin-top: 100px;
+    padding: 90px;
+}
+
+.title {
+    font-size: 40px;
+    color: rgb(68, 195, 228);
+    margin-bottom: 45px;
+}
+
+.inp1 {
+    width: 100%;
+    padding: 20px 35px;
+    font-size: 25px;
+    margin-bottom: 45px;
+}
+
+.btn1 {
+    width: 100%;
+    background-color: rgb(68, 195, 228);
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+    border: none;
+}

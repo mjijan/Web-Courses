@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(17, 25, 81);
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    margin: auto;
+    margin-top: 100px;
+    width: 1202px;
+    height: 800px;
+}
+
+.d1 {
+    background-color: white;
+    width: 600px;
+    height: 800px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.d2 {
+    background-color: rgb(207, 11, 76);
+    width: 600px;
+    height: 560px;
+    display: inline-block;
+    margin-left: -4px;
+    vertical-align: middle;
+}
+
+.img1 {
+    margin-top: 100px;
+    margin-left: 120px;
+}
