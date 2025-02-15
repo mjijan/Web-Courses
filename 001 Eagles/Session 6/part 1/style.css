@@ -1,0 +1,85 @@
+body {
+    font-family: sans-serif;
+    background-image: url('imgs/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    width : 1000px;
+    margin: auto;
+    margin-top: 25px;
+}
+.thambnail {
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    border-radius: 100%;
+}
+.tbl {
+    width: 100%;
+    border-collapse: collapse;
+   
+}
+th , td {
+    text-align: left;
+    padding: 15px;
+    font-size: 17px;
+    
+}
+tr {
+    height: 65px;
+    
+}
+.client-name {
+    vertical-align: middle;
+    display: inline-block;
+}
+.price {
+    font-weight: bold;
+}
+.th1 {
+    border-radius: 15px 0 0 0;
+    width: 5%;
+}
+.th2 {
+    width: 20%;
+}
+.th3 , .th4 , .th5 {
+    width: 15%;
+}
+.th6 {
+    border-radius: 0 15px 0 0;
+    width: 10%;
+}
+
+tr:nth-child(odd)
+{
+    background-color: rgba(255, 255, 255, 0.522);
+}
+
+tr:nth-child(even)
+{
+    background-color: rgba(243, 237, 251 , 0.7);
+}
+.first-row {
+    background-color: rgba(243, 237, 251 , 0.7) !important;
+}
+
+.delivered {
+    background-color: rgb(146, 245, 185);
+    border-radius: 30px;
+    padding: 8px 30px;
+    font-size: 17px;
+    font-weight: lighter;
+}
+.left-radius {
+    border-radius: 0 0 0 15px;
+}
+.right-radius {
+    border-radius: 0 0 15px 0;
+}
