@@ -1,0 +1,169 @@
+body {
+    background-color: rgb(157, 177, 177);
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 950px;
+    background: rgb(228, 245, 235);
+    margin: auto;
+    margin-top: 100px;
+    padding: 45px 90px;
+    padding-right: 40px;
+}
+header {
+    height: 100px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(158, 158, 158, 0.204);
+}
+.logo {
+    width: 85px;
+    margin-right: 135px;
+    vertical-align: middle;
+}
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+li {
+    display: inline;
+}
+li a {
+    display: inline-block;
+    margin-right: 10px;
+    color: black;
+}
+li a:hover {
+    color: rgb(43, 0, 128);
+}
+nav {
+    margin-right: 50px;
+    display: inline-block;
+}
+.btn {
+    width: 70px;
+    height: 30px;
+    font-weight: bold;
+    border: none;
+}
+.btn1 {
+    background-color: white;
+    color: rgb(26, 48, 13);
+    margin-right: 5px;
+}
+.btn2 {
+    color: white;
+    background: rgb(26, 48, 13);
+}
+.active {
+    font-weight: bold;
+}
+.bold {
+    font-weight: bold;
+}
+main {
+    display: flex;
+    height: 320px;
+}
+main .left , main .right {
+    width: 50%;
+    height: 100%;
+}
+main .left {
+    padding: 25px 70px 35px 0;
+}
+.title {
+    color: rgb(32, 25, 84);
+    font-size: 45px;
+    margin-bottom: 15px;
+    line-height: 45px;
+}
+.desc {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    color: rgb(32, 25, 84);
+}
+.btn3 {
+    width: 115px;
+    height: 40px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    background-image: linear-gradient(to top right , rgb(20,127,180) , rgb(61,73,153) , rgb(60, 58, 86));
+}
+.img-right {
+    width: 175px;
+    height: 100%;
+    margin-right: 15px;
+    box-shadow: 10px 10px 50px 7px rgba(130, 148, 138, 0.973);
+}
+footer {
+    display: flex;
+}
+footer .left {
+    padding: 20px 0;    
+}
+footer .left .text {
+    width: 55%;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    color: rgb(32, 25, 84);
+}
+footer .left , footer .right {
+    width: 50%;
+    height: 100%;
+}
+
+.emailblock {
+    background-color: white;
+    width: 190px;
+    padding: 10px;
+}
+.btn4 {
+    width: 40px;
+    height: 25px;
+    font-size: 14px;
+    background-color:  rgb(26, 48, 13);
+    color: white;
+    border: none;
+}
+.inp1 {
+    width: 120px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+.numbers {
+    margin-top: 50px;
+    background-color: white;
+    width: 450px;
+}
+.num {
+    width: 80px;
+    height: 65px;
+    padding: 5px;
+    padding-top: 12px;
+    color: rgb(32, 25, 84);
+    display: inline-block;
+    text-align: center;
+}
+.d1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.d2 {
+    font-size: 12px;
+}
+.num:hover {
+    background-color: rgb(26, 48, 13);
+    color: white;
+}
