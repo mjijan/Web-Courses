@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    background-color: rgb(208, 231, 255);
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 700px;
+    min-height: 400px;
+    margin: auto;
+    background-color: rgb(255, 255, 217);
+    position: relative;
+    margin-top: 100px;
+    /* user-select: none; */
+}
+.car {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 30px;
+    position: absolute;
+    top : 10px;
+    left: 10px;
+
+    animation: anim1 10s infinite;
+}
+
+@keyframes anim1 {
+    0% {left : 10px; top : 10px ; background-color: red;}
+    25% {left : 590px; top : 10px ; background-color: green;}
+    50% {left : 590px; top : 290px ; background-color: black;}
+    75% {left : 10px; top : 290px ; background-color : wheat ;}
+    100% {left : 10px; top: 10px ; background-color: red;}
+}

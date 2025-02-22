@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 850px;
+    height: 600px;
+    margin: auto;
+    background-color: rgb(205, 232, 254);
+    position: relative;
+    margin-top: 50px;
+}
+.letter {
+    position: absolute;
+    top : 50px;
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+}
+.letter1 {
+    left: 300px;
+    animation: anim1 1s;
+}
+.letter2 {
+    left: 350px;
+    animation: anim1 1s;
+    animation-delay: 1s;
+}
+.letter3 {
+    left: 400px;
+    animation: anim1 1s;
+    animation-delay: 2s;
+}
+.letter4 {
+    left: 450px;
+    animation: anim1 1s;
+    animation-delay: 3s;
+}
+.letter5 {
+    left: 500px;
+    animation: anim1 1s;
+    animation-delay: 4s;
+}
+.letter6 {
+    left: 550px;
+    animation: anim1 1s;
+    animation-delay: 5s;
+}
+@keyframes anim1{
+    0%   {top : 50px; font-size: 50px;color: black; }
+    50%  {top : 500px ; font-size: 80px; color: red;}
+    100% {top : 50px; font-size: 50px; color: black;}
+}
