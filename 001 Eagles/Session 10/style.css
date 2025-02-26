@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    background-color: rgb(221, 255, 221);
+    font-family: sans-serif;
+    animation: body1 1s 5 forwards;
+    animation-delay: 4s;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 1500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 150px;
+    position: relative;
+    background-image: url('imgs/pitch.png');
+    background-size: 1300px 500px;
+    background-repeat: no-repeat;
+    background-position: 100px 0;
+}
+.player {
+    width: 80px;
+    position: absolute;
+    right: 300px;
+    top: 200px;
+    animation: player1 2s 1 forwards;
+    animation-delay: 0.1s;
+    animation-timing-function: ease-in;
+}
+.ball {
+    width: 15px;
+    position: absolute;
+    right: 350px;
+    top: 290px;
+    animation: ball1 4s 1 forwards;
+    animation-timing-function: ease-out;
+
+}
+.gk1 {
+    width: 70px;
+    position: absolute;
+    right: 1100px;
+    top: 150px;
+    transform:rotateZ(-10deg);
+    animation: gk1 1s 1 forwards;
+    animation-delay: 2s;
+}
+.gk2 {
+    width: 90px;
+    position: absolute;
+    right: 110px;
+    top: 150px;
+    transform:rotateZ(-40deg);
+    opacity: 0;
+    animation: gk2 1s 1 forwards;
+    animation-delay: 3s;
+}
+.goal {
+    position: absolute;
+    top: -300px;
+    left:  600px;
+    font-size: 100px;
+    font-weight: bold;
+    opacity: 0;
+    animation: goal 1s 1 forwards;
+    animation-delay: 4s;
+}
+@keyframes ball1 {
+    0%   { right: 350px; top: 290px; }
+    50% { right: 800px; top: 290px; }
+    100% {right: 1150px; top: 100px; }
+}
+@keyframes player1 {
+    0%   { right: 300px;}
+    100% { right: 750px;}
+}
+
+@keyframes gk1 {
+    0%   {display: inline-block; right: 1100px;}
+    90%  {display: inline-block; right: 1050px;}
+    100% {display: none;right: 1050px;}
+}
+
+@keyframes gk2 {
+    0%   {top: 150px; opacity: 1;right: 1050px;}
+    100% {top: 100px; opacity: 1;right: 1050px;}
+}
+@keyframes goal {
+    0%   {opacity: 1; top: -300px;}
+    100% {opacity: 1; top: -100px;}
+}
+@keyframes body1 {
+    0%   {background-color: rgb(221, 255, 221);}
+    20%  {background-color: rgb(255, 213, 213);}
+    40%  {background-color: rgb(254, 255, 213);}
+    60%  {background-color: rgb(213, 220, 255);}
+    80%  {background-color: rgb(206, 206, 206);}
+    100% {background-color: rgb(221, 255, 221);}
+}
