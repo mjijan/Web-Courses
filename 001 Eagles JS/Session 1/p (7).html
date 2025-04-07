@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .rs {
+            background-color: rgb(46, 74, 141);
+            height: 50px;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            
+        }
+        .bt {
+            width : 600px;
+            height: 60px;
+            font-size: 22px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button class="bt" onclick="f1()">show result</button>
+    <div class="rs bt" id="d1"></div>
+    <script>
+
+        function f1()
+        {
+            var x  , y , z;
+            x = 10;
+            y = 20;
+            z = 30;
+            var result = x + y + z;
+            // console.log(result);
+            document.getElementById("d1").innerHTML = "result = " + result;
+        }
+        
+    </script>
+
+</body>
+</html>

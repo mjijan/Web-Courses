@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            padding: 20px;
+            width : 300px;
+            margin: auto;
+            margin-top: 20px;
+            background-color: rgb(85, 85, 85);
+            padding-bottom: 10px;
+        }
+        .n {
+            width : 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: block;
+            background-color: rgb(139, 0, 0);
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            height: 40px;
+        }
+        .n::placeholder {
+            color: rgb(199, 199, 199);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input class="n" id="n1" placeholder="First Number" />
+        <input class="n" id="n2" placeholder="Second Number" />
+        <button class="n" onclick="sum()">+</button>
+        <div class="n" id="result"></div>
+        <button class="n"  onclick="reset()">reset</button>
+
+    </div>
+    <script>
+        function sum()
+        {
+            var num1 = parseInt ( document.getElementById("n1").value );
+            var num2 = parseInt ( document.getElementById("n2").value );
+            var s = num1 + num2;
+            document.getElementById("result").innerHTML = s;
+        }
+        function reset()
+        {
+            document.getElementById("n1").value = "";
+            document.getElementById("n2").value = "";
+            document.getElementById("result").innerHTML = "";
+        }
+    </script>
+</body>
+</html>
