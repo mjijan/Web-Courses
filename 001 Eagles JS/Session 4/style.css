@@ -1,0 +1,66 @@
+.body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container {
+    background-color: black;
+    width: 500px;
+    height: 775px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+    padding: 25px;
+    color: white;
+    padding-right: 0;
+    user-select: none;
+}
+.title {
+    background-color: white;
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 0;
+    margin-bottom: 25px;
+    color: black;
+    width: 95%;
+}
+.screen {
+    text-align: right;
+    font-weight: bold;
+    font-size: 35px;
+    margin-right: 30px;
+    margin-bottom: 25px;
+    user-select:text;
+    height: 45px;
+}
+.btn {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 40px;
+    display: inline-block;
+    margin-right: 23px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+.btn1 {
+    color: black;
+    background-color: rgb(154, 154, 154);
+}
+.btn2 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(238, 148, 6);
+}
+.btn3 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(47, 47, 47);
+}
+.btn:hover {
+    box-shadow: 0 0 1px 2px white;
+}

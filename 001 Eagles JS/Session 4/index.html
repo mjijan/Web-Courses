@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Welcome To Calculator</div>
+        <div class="screen" id="screen">0</div>
+
+        <div class="btn btn1" onclick="reset_all()">AC</div>
+        <div class="btn btn1" onclick="delete_once()">&#x2190;</div>
+        <div class="btn btn1" onclick="percent()">%</div>
+        <div class="btn btn2" onclick="operation('/')" id="b1">÷</div>
+
+        <div class="btn btn3" onclick="number(7)">7</div>
+        <div class="btn btn3" onclick="number(8)">8</div>
+        <div class="btn btn3" onclick="number(9)">9</div>
+        <div class="btn btn2"  onclick="operation('*')" id="b2">×</div>
+
+        <div class="btn btn3" onclick="number(4)">4</div>
+        <div class="btn btn3" onclick="number(5)">5</div>
+        <div class="btn btn3" onclick="number(6)">6</div>
+        <div class="btn btn2"  onclick="operation('-')" id="b3">-</div>
+
+        <div class="btn btn3" onclick="number(1)">1</div>
+        <div class="btn btn3" onclick="number(2)">2</div>
+        <div class="btn btn3" onclick="number(3)">3</div>
+        <div class="btn btn2" onclick="operation('+')" id="b4">+</div>
+
+        <div class="btn btn3" onclick="number('0')">0</div>
+        <div class="btn btn3" onclick="number('00')">00</div>
+        <div class="btn btn3" onclick="number('.')">.</div>
+        <div class="btn btn2" onclick="result()">=</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
