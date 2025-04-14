@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(253, 255, 223);
+}
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container {
+    width: 600px;
+    padding: 20px;
+    font-size: 30px;
+    margin: auto;
+    font-weight: bold;
+}
