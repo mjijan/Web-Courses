@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(68, 195, 230);
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+    padding: 45px;
+    border: 2px solid rgb(27, 165, 200);
+}
+
+.title {
+    font-size: 20px;
+    color: rgb(68, 195, 230);
+    margin-bottom: 25px;
+    /* font-weight: bold; */
+}
+
+.inp1 {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid rgb(178, 178, 178);
+    margin-bottom: 20px;
+}
+
+.btn {
+     background-color: rgb(68, 195, 230);
+     color: white;
+     border: none;
+}
