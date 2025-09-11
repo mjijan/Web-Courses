@@ -1,0 +1,102 @@
+body{
+    background-image: url('imgs/bg.jpg');
+    background-size: cover;
+}
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgba(193, 193, 193, 0.546);
+    min-height: 400px;
+    border-radius: 22px;
+}
+.main-header {
+    padding: 15px;
+    font-size: 20px;
+    background-color:  rgba(255, 255, 255, 0.323);
+    border-radius: 20px 20px 0 0;
+}
+.main-body {
+    padding: 10px 20px;
+}
+.tbl1{
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    border-collapse: collapse; 
+}
+
+.tbl1 th{
+    background-color: rgba(230, 230, 240, 0.855);
+    padding: 10px 10px;
+    text-align: left;
+}
+.tbl1 td{
+    padding: 12px 10px;
+    text-align: left;
+}
+.tr1{
+    background-color: rgba(247, 239, 252, 0.9);
+}
+.tr2{
+    background-color: rgba(229, 226, 232, 0.9);
+}
+.tbl1 .th-left {
+    border-radius: 10px 0 0 0 ;
+}
+.tbl1 .th-right {
+    border-radius: 0 10px  0 0 ;
+}
+.person {
+    width: 29px;
+    height: 29px;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.Delivered {
+    background-color: rgb(137, 246, 147);
+    padding: 5px 10px;
+    border-radius: 20px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    color: rgb(25, 102, 35);
+}
+.Cancelled {
+    background-color: rgb(254, 165, 165);
+    padding: 5px 10px;
+    border-radius: 20px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    color: rgb(165, 39, 39);
+}
+.Shipped {
+    background-color: rgb(176, 176, 255);
+    padding: 5px 10px;
+    border-radius: 20px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    color: rgb(40, 62, 145);
+}
+.Pending {
+    background-color: rgb(255, 229, 186);
+    padding: 5px 10px;
+    border-radius: 20px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    color: rgb(175, 106, 20);
+}
+.tbl1 .td-left {
+    border-radius: 0 0 0 10px;
+}
+.tbl1 .td-right {
+    border-radius: 0 0 10px 0;
+}
