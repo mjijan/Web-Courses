@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root {
+    --a_color1 : rgb(236,49,15);
+    --a_color2 : rgb(246,132,24);
+    --a_color3 : rgb(255, 149, 51);
+
+    --b_color1 :  rgb(156, 48, 250);
+    --b_color2 :  rgb(127, 47, 255);
+    --b_color3 :  rgb(159, 85, 255);
+    
+    --c_color1 :  rgb(223, 53, 169);
+    --c_color2 :  rgb(255, 47, 106);
+    --c_color3 :  rgb(232, 46, 108);
+
+}
+body {
+    margin: 0;
+}
+.container{
+    width: 1000px;
+    height: 820px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+    border: 3px solid black;
+}
+.d1 {
+    width: 360px;
+    height: 360px;
+    border-radius: 100%;
+    position: absolute;
+    top: 240px;
+    left: 65px;
+    border: 25px solid rgb(184, 184, 184);
+    text-align: center;
+    font-size: 55px;
+    padding-top: 75px;
+    font-weight: bold;
+}
+.img1 {
+    margin-top: 10px;
+}
+.d2{
+    position: absolute;
+    top: 60px;
+    right: 120px;
+    width: 250px;
+    height: 90px;
+    border-radius: 0 80px 80px 0;
+    color: white;
+    padding: 15px 30px;
+    box-shadow: 0 10px 15px 1px rgba(190, 190, 190, 0.943);
+}
+.txt1 {
+    font-size: 12px;
+    font-weight: bold;
+}
+.txt2 {
+    font-size: 10px;
+}
+.d3{
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    position: absolute;
+    top: 40px;
+    right: 350px;
+    box-shadow: -10px 10px 15px 1px rgba(190, 190, 190, 0.943);
+}
+.d4{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 55px;
+    right: 365px;
+    background-color: white;
+}
+.d5{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: absolute;
+    top: 75px;
+    right: 385px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+.card {
+    position: relative;
+    right: 0;
+}
+.c1 {
+    top: 0px;
+}
+.c2 {
+    top: 150px;
+}
+.c3 {
+    top: 300px;
+}
+
+/*  Card1 start  */
+.c1 .d2{
+    background-image: linear-gradient(to right , var(--a_color2) , var(--a_color1));
+}
+.c1 .d3{
+    background-image: linear-gradient(to right ,var(--a_color3) ,var(--a_color2));
+}
+.c1 .d5{
+    background-color: var(--a_color2);
+}
+.c1 .line1{
+    width: 100px;
+    height: 1px;
+    border: 3px dotted var(--a_color2);
+    position: absolute;
+    top: 150px;
+    right: 500px;
+    transform: rotate(-45deg);
+
+}
+
+/*  Card2 start  */
+.c2 .d2{
+    background-image: linear-gradient(to right , var(--b_color2) , var(--b_color1));
+}
+.c2 .d3{
+    background-image: linear-gradient(to right ,var(--b_color3) ,var(--b_color2));
+}
+.c2 .d5{
+    background-color: var(--b_color2);
+}
+
+
+/*  Card3 start  */
+.c3 .d2{
+    background-image: linear-gradient(to right , var(--c_color2) , var(--c_color1));
+}
+.c3 .d3{
+    background-image: linear-gradient(to right ,var(--c_color3) ,var(--c_color2));
+}
+.c3 .d5{
+    background-color: var(--c_color2);
+}
+
