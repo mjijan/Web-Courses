@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+    background-color: rgb(118, 0, 0);
+}
+.container {
+    width: 400px;
+    padding: 30px;
+    background-color: rgb(91, 91, 91);
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.inp1 {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+.result {
+    background-color: bisque;
+}
+.b1 {
+    background-color: aquamarine;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="f1()">Change content</button>
+    <button onclick="f2()">Change style</button>
+    <button onclick="f3()">Reset</button>
+    <div id="main">Good Bye</div>
+
+    <script>
+        function f1()
+        {
+            document.getElementById("main").innerHTML = "Hello My Students." ;
+        }
+        function f2()
+        {
+            document.getElementById("main").style.color = "Red";
+            document.getElementById("main").style.fontSize = "40px";
+        }
+        function f3()
+        {
+            document.getElementById("main").innerHTML = "Good Bye" ;
+            document.getElementById("main").style.color = "black";
+            document.getElementById("main").style.fontSize = "16px";
+        }
+    </script>
+</body>
+</html>
