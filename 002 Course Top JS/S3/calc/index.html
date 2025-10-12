@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XO Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+       <div id="widget" class="widget">-</div>
+       <div id="screen" class="screen">0</div>
+
+       <div class="btn btn1" onclick="reset_all()">AC</div>
+       <div class="btn btn1" onclick="change_sign()">+/-</div>
+       <div class="btn btn1" onclick="percent()">%</div>
+       <div class="btn btn2" onclick="set_operation('÷')">÷</div>
+
+       <div class="btn btn3" onclick="set_num(7)">7</div>
+       <div class="btn btn3" onclick="set_num(8)">8</div>
+       <div class="btn btn3" onclick="set_num(9)">9</div>
+       <div class="btn btn2" onclick="set_operation('×')">×</div>
+
+       <div class="btn btn3" onclick="set_num(4)">4</div>
+       <div class="btn btn3" onclick="set_num(5)">5</div>
+       <div class="btn btn3" onclick="set_num(6)">6</div>
+       <div class="btn btn2" onclick="set_operation('-')">-</div>
+
+       <div class="btn btn3" onclick="set_num(1)">1</div>
+       <div class="btn btn3" onclick="set_num(2)">2</div>
+       <div class="btn btn3" onclick="set_num(3)">3</div>
+       <div class="btn btn2" onclick="set_operation('+')">+</div>
+
+       <div class="btn btn3" onclick="del_one()" >&#8656;</div>
+       <div class="btn btn3" onclick="set_num(0)">0</div>
+       <div class="btn btn3" onclick="set_num('.')">.</div>
+       <div class="btn btn2" onclick="show_result()">=</div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

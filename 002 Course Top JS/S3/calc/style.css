@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+::-webkit-scrollbar,
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track { 
+    width: 3px;
+    height: 8px;
+    border: none;
+    background: transparent;
+}
+
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-corner,
+::-webkit-resizer {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar-track {
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+
+.container {
+    width: 630px;
+    height: 1200px;
+    padding: 10px;
+    padding-left: 20px;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    margin-top: 50px;
+    user-select: none;
+}
+
+.widget {
+    margin-top: 140px;
+    color: rgb(180, 180, 180);
+    font-size: 50px;
+    text-align: right;
+    height: 70px;
+}
+
+.screen {
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 85px;
+    height: 120px;
+    text-align: right;
+    margin-bottom: 20px;
+    overflow-y: auto;
+}
+
+.btn {
+    width: 135px;
+    height: 135px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 40px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: white;
+    vertical-align: top;
+}
+
+.btn1 {
+    background-color: rgb(90, 90, 90);
+}
+.btn2 {
+    background-color: rgb(255, 159, 10);
+    font-size: 70px;
+    padding-top: 30px;
+}
+.btn3 {
+    background-color: rgb(41, 41, 41);
+}
