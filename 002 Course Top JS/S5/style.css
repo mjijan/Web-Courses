@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+}
+
+.container {
+    width: 900px;
+    padding: 20px;
+    padding-right: 0;
+    padding-bottom: 0;
+    background-color: rgb(88, 88, 88);
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    vertical-align: top;
+}
+
+.stu-name {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.stu-img {
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    height: 80px;
+    margin-bottom: 6px;
+}
+
+.stu-avg {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.succeed {
+    background-color: rgb(220, 254, 212);
+}
+
+.failed {
+    background-color: rgb(255, 185, 185);
+}
+.plus {
+    font-size: 130px;
+    padding-top: 25px;
+    color:  rgb(88, 88, 88);
+    user-select: none;
+}
+
+.plus:hover {
+    background-color: rgb(254, 255, 226);
+    cursor: pointer;
+}
+
+.add_student {
+    width: 450px;
+    padding: 20px;
+    background-color: rgb(0, 99, 169);
+    top: 50px;
+    left: calc(50% - 225px);
+    border-radius: 20px;
+    position: relative;
+    color: white;
+    display: none;
+}
+
+.edit_student {
+    width: 450px;
+    padding: 20px;
+    background-color: rgb(156, 70, 0);
+    top: 50px;
+    left: calc(50% - 225px);
+    border-radius: 20px;
+    position: relative;
+    color: white;
+    display: none;
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0 30px 0;
+}
+
+.inp1 {
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.add-btn {
+    width: 50%;
+    margin-left: 25%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(0, 46, 79);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.edit-btn {
+    width: 50%;
+    margin-left: 25%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(105, 54, 0);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.close-new-student {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close-edited-student {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.edit {
+    background-color: rgb(0, 86, 23);
+    color: white;
+    font-weight: bold;
+    width: 60px;
+    border-radius: 5px;
+    padding: 2px;
+}
+.delete {
+    background-color: rgb(109, 0, 0);
+    color: white;
+    font-weight: bold;
+    width: 60px;
+    border-radius: 5px;
+    padding: 2px;
+}
