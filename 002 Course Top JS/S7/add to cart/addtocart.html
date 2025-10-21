@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="addtocart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+    <div class="header">
+        <p class="logo" onclick="reset_local()">LOGO</p>
+        <div class="cart"><i class="fa-solid  fa fa-shopping-cart"></i>
+            <p id="count">0</p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div id="root">
+
+            <div class="box">
+                <div class="img-box">
+                    <img id="img1" class="images" src="image/1.jpg">
+                </div>
+                <div class="bottom">
+                    <p id="item1">Z Flip Foldable Mobile</p>
+                    <h2>$ <span id="price1">120.0</span></h2><button onclick="add_item(1)">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="img-box">
+                    <img id="img2" class="images" src="image/2.jpg">
+                </div>
+                <div class="bottom">
+                    <p id="item2">Air Pods Pro</p>
+                    <h2>$ <span id="price2">60.0</span></h2><button onclick="add_item(2)">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="img-box">
+                    <img id="img3" class="images" src="image/3.jpg">
+                </div>
+                <div class="bottom">
+                    <p id="item3">250D DSLR Camera</p>
+                    <h2>$ <span id="price3">230.0</span></h2><button onclick="add_item(3)">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="img-box">
+                    <img id="img4" class="images" src="image/4.jpg">
+                </div>
+                <div class="bottom">
+                    <p id="item4">Head Phones</p>
+                    <h2>$ <span id="price4">100.0</span></h2><button onclick="add_item(4)">Add to cart</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="sidebar">
+            <div class="head">
+                <p>My Cart</p>
+            </div>
+
+            <div id="cartItem">
+                				
+					<!-- <div class="cart-item">
+						<div class="row-img">
+							<img class="rowimg" src="image/2.jpg">
+						</div>
+						<p style="font-size:12px;">Air Pods Pro</p>
+						<h2 style="font-size: 15px;">$ 60.00</h2>
+						<i class="fa-solid fa-trash fa fa-trash-o" onclick=""></i>
+					</div> -->
+						 
+
+            </div>
+
+            <div class="foot">
+                <h3>Total</h3>
+                <h2>$ <span id="total">0.0</span></h2>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script src="script.js"></script>
